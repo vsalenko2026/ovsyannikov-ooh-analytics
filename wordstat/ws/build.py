@@ -18,6 +18,29 @@ LONG_COLUMNS = [
 INVALID_SHEET_CHARS = re.compile(r"[\[\]:*?/\\]")
 
 
+def keep_perimeter(cfg, records: list[dict]) -> tuple[list[dict], dict]:
+    """Отбросить ответы по фразам, которых уже нет в config.yaml.
+
+    Периметр задаётся конфигом, а сырые ответы не удаляются — они нужны для
+    воспроизводимости. Поэтому сузить периметр можно пересборкой, без выгрузки
+    заново: снятая фраза остаётся на диске, но в CSV и XLSX не попадает.
+    """
+    wanted = {phrase.casefold() for phrase in cfg.phrases}
+    kept, dropped = [], {}
+    for record in records:
+        phrase = record["request"]["phrase"]
+        if phrase.casefold() in wanted:
+            kept.append(record)
+        else:
+            dropped[phrase] = dropped.get(phrase, 0) + 1
+    if not kept:
+        raise SystemExit(
+            "после отбора по периметру не осталось ни одного ответа: "
+            "сверьте phrases в config.yaml с тем, что выгружено"
+        )
+    return kept, dropped
+
+
 def read_raw(directory: pathlib.Path) -> list[dict]:
     """Все сохранённые ответы прогона."""
     files = sorted(p for p in directory.glob("*.json") if p.name != "manifest.json")
@@ -219,6 +242,10 @@ def build(cfg, raw_dir: pathlib.Path, out_dir: pathlib.Path, force: bool = False
             "Пересобрать поверх: добавьте --force"
         )
     records = read_raw(raw_dir)
+    records, dropped = keep_perimeter(cfg, records)
+    if dropped:
+        log(f"вне периметра config.yaml, в сборку не вошли: "
+            f"{', '.join(f'{p} ({n})' for p, n in sorted(dropped.items()))}")
     period = records_period(cfg, records)
     anchor = resolve_anchor(cfg, records, period)
     rows = to_rows(cfg, records, anchor, today=today)

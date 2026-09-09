@@ -1,6 +1,7 @@
 """Сквозная проверка без сети: выгрузка -> кэш -> сборка -> сверка."""
 
 import csv
+import dataclasses
 import datetime as dt
 import functools
 import pathlib
@@ -164,6 +165,21 @@ class TestBuild(PipelineCase):
         rows = build_mod.to_rows(self.cfg, [record], "start", today=dt.date(2026, 9, 9))
         self.assertEqual([r["count"] for r in rows], [0, 7])
         self.assertEqual(rows[0]["share"], "")
+
+    def test_phrase_removed_from_config_leaves_the_build(self):
+        """Сузили периметр — пересборка убирает фразу, сырые ответы не трогаем."""
+        self.fetch()
+        raw = self.root / "raw" / "2026-09-09"
+        before = len(list(raw.glob("*.json")))
+        narrowed = dataclasses.replace(self.cfg, phrases=(self.cfg.phrases[0],))
+        out = self.root / "output" / "narrowed"
+        summary = build_mod.build(narrowed, raw, out, today=dt.date(2026, 9, 9),
+                                  log=lambda *_: None)
+        with (out / "wordstat_long.csv").open(encoding="utf-8-sig") as handle:
+            phrases = {row["phrase"] for row in csv.DictReader(handle)}
+        self.assertEqual(phrases, {narrowed.phrases[0]})
+        self.assertEqual(len(list(raw.glob("*.json"))), before)
+        self.assertLess(summary["rows"], 2 * 3 * 5)
 
     def test_partial_week_is_flagged(self):
         # Если считать «сегодня» 05.08, неделя 03–09.08 ещё не закрыта.
