@@ -81,6 +81,7 @@ class Config:
     period: str
     week_anchor: str
     include_current_period: bool
+    daily_lookback_days: int
     devices: tuple[str, ...]
     phrases: tuple[str, ...]
     regions_file: pathlib.Path
@@ -126,6 +127,22 @@ class Config:
                 first_day = end
             end = periods.period_end(first_day - dt.timedelta(days=1), self.period)
         return end
+
+    def effective_start_date(self, today: dt.date | None = None) -> tuple[dt.date, bool]:
+        """Начало ряда и признак того, что оно упёрлось в глубину дневных данных.
+
+        Дневная детализация доступна только за последние ~60 дней — для
+        периодов «до» с апреля она не годится, о чём скрипт предупреждает.
+        """
+        today = today or dt.date.today()
+        if self.period == periods.PERIOD_DAILY:
+            earliest = today - dt.timedelta(days=self.daily_lookback_days - 1)
+            if self.start_date < earliest:
+                return earliest, True
+            return self.start_date, False
+        if self.period == periods.PERIOD_WEEKLY:
+            return periods.week_start(self.start_date), False
+        return self.start_date.replace(day=1), False
 
     def planned_calls(self) -> int:
         return len(self.phrases) * len(self.resolved_regions()) * len(self.devices)
@@ -204,6 +221,7 @@ def load(path: pathlib.Path | str = DEFAULT_CONFIG) -> Config:
         period=period,
         week_anchor=anchor,
         include_current_period=bool(series.get("include_current_period", False)),
+        daily_lookback_days=int(series.get("daily_lookback_days", 60)),
         devices=devices,
         phrases=phrases,
         regions_file=regions_file,

@@ -91,6 +91,29 @@ def detect_week_anchor(dates) -> str:
     )
 
 
+def detect_month_anchor(dates) -> str:
+    """С какого края месяца API проставляет дату: `start` или `end`."""
+    days = [parse_api_date(d) for d in dates]
+    if not days:
+        raise ValueError("нет дат, по которым определять границу месяца")
+    if all(d.day == 1 for d in days):
+        return "start"
+    if all(d == month_end(d) for d in days):
+        return "end"
+    raise ValueError("даты в ответе API не ложатся на границу месяца")
+
+
+def detect_anchor(dates, period: str) -> str:
+    """Якорь периода по фактическим датам ответа."""
+    if period == PERIOD_DAILY:
+        return "start"          # для дня границы совпадают, якорь не используется
+    if period == PERIOD_WEEKLY:
+        return detect_week_anchor(dates)
+    if period == PERIOD_MONTHLY:
+        return detect_month_anchor(dates)
+    raise ValueError(f"неизвестный период: {period}")
+
+
 def week_bounds(day: dt.date, anchor: str) -> tuple[dt.date, dt.date]:
     """Начало и конец недели по дате из ответа API."""
     if anchor == "start":

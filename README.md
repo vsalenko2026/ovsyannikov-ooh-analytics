@@ -33,10 +33,19 @@ python3 run.py regions fetch-tree   # разово: справочник рег�
 python3 run.py regions resolve      # разово: проставить region_id
 python3 run.py probe-regions        # разово: проверить, суммирует ли API регионы
 
-python3 run.py fetch                # выгрузка: кэш, ретраи, лог стоимости
+python3 run.py fetch                # недельный ряд: кэш, ретраи, лог стоимости
 python3 run.py build                # wordstat_long.csv + wordstat_wide.xlsx
 python3 run.py reconcile --manual ручная_выгрузка.csv
+
+python3 run.py fetch --period PERIOD_DAILY   # дневной ряд, глубина ~60 суток
+python3 run.py build --period PERIOD_DAILY
+python3 run.py top-export                    # топ вложенных запросов и ассоциаций
 ```
+
+Три вида выгрузки, по 72 вызова каждая: недельный ряд (основа для расчёта
+множителей), дневной срез (форма отклика внутри кампании — глубже 60 суток
+Вордстат по дням не отдаёт, окна «до» там нет) и топ слов за 30 дней (раздел
+«что именно ищут» и разбор омонимов по Орловской области).
 
 Периметр — 24 региона: 17 кампании (19 городов) и 7 контрольных. Ядро
 метрики — `овсянников мыло`, `овсянников косметика`, `овсянников купить`.
@@ -55,7 +64,7 @@ python3 run.py reconcile --manual ручная_выгрузка.csv
 
 ## Доступы
 
-Заводит заказчик; в репозитории ключей нет и быть не должно. Нужны аккаунт
-Yandex Cloud / AI Studio с платёжным аккаунтом, сервисный аккаунт с ролью
-`search-api.webSearch.user`, его API-ключ и `folderId` каталога. Ключ и
-каталог кладутся в `wordstat/.env`, который в `.gitignore`.
+Пошаговая инструкция — [`wordstat/README.md`, раздел «Доступы»](wordstat/README.md#доступы-что-сделать-по-шагам):
+организация в AI Studio, платёжный аккаунт, API-ключ, `folderId`, роль
+`search-api.webSearch.user` и проверочный запрос. Ключ и каталог кладутся в
+`wordstat/.env`, который в `.gitignore`; в репозитории их нет и быть не должно.

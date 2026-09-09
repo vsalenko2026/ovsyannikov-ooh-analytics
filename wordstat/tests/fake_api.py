@@ -54,3 +54,41 @@ def weekly_series(body, base=10, step=3, anchor="start"):
         week += dt.timedelta(days=7)
         index += 1
     return {"results": results}
+
+
+def daily_series(body, base=5, step=1):
+    """Синтетический ряд по дням."""
+    start = dt.date.fromisoformat(body["fromDate"][:10])
+    end = dt.date.fromisoformat(body["toDate"][:10])
+    results, day, index = [], start, 0
+    while day <= end:
+        results.append(
+            {"date": f"{day.isoformat()}T00:00:00Z", "count": str(base + step * index),
+             "share": 0.0001}
+        )
+        day += dt.timedelta(days=1)
+        index += 1
+    return {"results": results}
+
+
+def top_payload(body, nested=3, associations=2):
+    """Синтетический ответ GetTop."""
+    phrase = body["phrase"]
+    return {
+        "totalCount": "1000",
+        "results": [
+            {"phrase": f"{phrase} {i}", "count": str(100 - 10 * i)} for i in range(nested)
+        ],
+        "associations": [
+            {"phrase": f"похожий {i}", "count": str(50 - 5 * i)} for i in range(associations)
+        ],
+    }
+
+
+def dispatch(body):
+    """Ответ по форме запроса: GetDynamics или GetTop."""
+    if "period" not in body:
+        return top_payload(body)
+    if body["period"] == "PERIOD_DAILY":
+        return daily_series(body)
+    return weekly_series(body)

@@ -32,8 +32,20 @@ def read_raw(directory: pathlib.Path) -> list[dict]:
     return records
 
 
-def resolve_anchor(cfg, records: list[dict]) -> str:
-    """Якорь недели: из конфига или определённый по фактическим датам."""
+def records_period(cfg, records: list[dict]) -> str:
+    """Период выгрузки берётся из сохранённых запросов, а не из текущего конфига."""
+    found = {record["request"].get("period", cfg.period) for record in records}
+    if len(found) > 1:
+        raise SystemExit(
+            "в каталоге смешаны разные периоды: " + ", ".join(sorted(found)) +
+            ". Дневная и недельная выгрузки собираются раздельно"
+        )
+    return found.pop()
+
+
+def resolve_anchor(cfg, records: list[dict], period: str | None = None) -> str:
+    """Якорь периода: из конфига или определённый по фактическим датам."""
+    period = period or records_period(cfg, records)
     if cfg.week_anchor != "auto":
         return cfg.week_anchor
     dates = [
@@ -42,8 +54,8 @@ def resolve_anchor(cfg, records: list[dict]) -> str:
         for item in (record["response"].get("results") or record["response"].get("dynamics") or [])
     ]
     if not dates:
-        raise SystemExit("в ответах нет ни одной даты — определить границы недель невозможно")
-    return periods.detect_week_anchor(dates)
+        raise SystemExit("в ответах нет ни одной даты — определить границы периодов невозможно")
+    return periods.detect_anchor(dates, period)
 
 
 def region_order(cfg) -> dict[str, int]:
@@ -117,6 +129,8 @@ def sheet_title(phrase: str, device: str, with_device: bool, used: set[str]) -> 
 def week_label(row: dict) -> str:
     start = periods.parse_date(row["week_start"])
     end = periods.parse_date(row["week_end"])
+    if start == end:
+        return f"{start:%d.%m}"
     return f"{start:%d.%m}–{end:%d.%m}"
 
 
@@ -203,7 +217,8 @@ def build(cfg, raw_dir: pathlib.Path, out_dir: pathlib.Path, force: bool = False
             "Пересобрать поверх: добавьте --force"
         )
     records = read_raw(raw_dir)
-    anchor = resolve_anchor(cfg, records)
+    period = records_period(cfg, records)
+    anchor = resolve_anchor(cfg, records, period)
     rows = to_rows(cfg, records, anchor, today=today)
     if not rows:
         raise SystemExit("в сырых ответах нет данных")
@@ -215,6 +230,7 @@ def build(cfg, raw_dir: pathlib.Path, out_dir: pathlib.Path, force: bool = False
     summary = {
         "raw_dir": str(raw_dir),
         "rows": len(rows),
+        "period": period,
         "week_anchor": anchor,
         "weeks": len({r["week_start"] for r in rows}),
         "regions": len({r["region_name"] for r in rows}),
@@ -226,8 +242,10 @@ def build(cfg, raw_dir: pathlib.Path, out_dir: pathlib.Path, force: bool = False
     (out_dir / "build.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    log(f"строк: {len(rows)}; недель: {summary['weeks']}; регионов: {summary['regions']}")
-    log(f"дата недели в ответе API — {'начало' if anchor == 'start' else 'конец'} недели")
+    unit = "дней" if period == periods.PERIOD_DAILY else ("месяцев" if period == periods.PERIOD_MONTHLY else "недель")
+    log(f"период: {period}; строк: {len(rows)}; {unit}: {summary['weeks']}; регионов: {summary['regions']}")
+    if period != periods.PERIOD_DAILY:
+        log(f"дата в ответе API — {'начало' if anchor == 'start' else 'конец'} периода")
     if partial:
-        log(f"незакрытые недели (is_partial=1): {', '.join(partial)}")
+        log(f"незакрытые периоды (is_partial=1): {', '.join(partial)}")
     return summary

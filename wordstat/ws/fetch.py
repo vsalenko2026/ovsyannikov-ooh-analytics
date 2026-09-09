@@ -60,7 +60,7 @@ class Call:
 def build_plan(cfg, today: dt.date | None = None) -> list[Call]:
     """Перечень вызовов. По одному региону на вызов — см. README, «Один регион на вызов»."""
     today = today or dt.date.today()
-    from_date = periods.week_start(cfg.start_date) if cfg.period == periods.PERIOD_WEEKLY else cfg.start_date
+    from_date, _clamped = cfg.effective_start_date(today)
     to_date = cfg.effective_end_date(today)
     if to_date <= from_date:
         raise SystemExit(f"пустой период: {from_date} … {to_date}")
@@ -83,8 +83,21 @@ def build_plan(cfg, today: dt.date | None = None) -> list[Call]:
     return plan
 
 
+PERIOD_SUFFIX = {
+    periods.PERIOD_WEEKLY: "",
+    periods.PERIOD_DAILY: "-day",
+    periods.PERIOD_MONTHLY: "-month",
+}
+
+
+def run_name(run_date: dt.date, period: str) -> str:
+    """Имя прогона: дата плюс метка периода, чтобы дневная и недельная
+    выгрузки одной даты не смешивались в одном каталоге."""
+    return f"{run_date.isoformat()}{PERIOD_SUFFIX.get(period, '-' + period.lower())}"
+
+
 def run_dir(cfg, run_date: dt.date) -> pathlib.Path:
-    return cfg.raw_dir / run_date.isoformat()
+    return cfg.raw_dir / run_name(run_date, cfg.period)
 
 
 def cached(path: pathlib.Path, call: Call) -> bool:
@@ -174,7 +187,9 @@ def latest_run(cfg) -> pathlib.Path:
         raise SystemExit(f"нет каталога {cfg.raw_dir} — сначала `run.py fetch`")
     runs = sorted(
         p for p in cfg.raw_dir.iterdir()
-        if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.name)
+        if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}-\d{2}(-[a-z]+)?", p.name)
+        and p.name.endswith(PERIOD_SUFFIX.get(cfg.period, ""))
+        and (cfg.period != periods.PERIOD_WEEKLY or re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.name))
     )
     if not runs:
         raise SystemExit(f"в {cfg.raw_dir} нет прогонов — сначала `run.py fetch`")

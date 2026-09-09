@@ -5,8 +5,10 @@
     python3 run.py regions fetch-tree   выкачать справочник регионов
     python3 run.py regions resolve      проставить region_id в regions.yaml
     python3 run.py probe-regions        проверить, суммирует ли API несколько регионов
-    python3 run.py fetch                выгрузить динамику (кэш, ретраи, лог стоимости)
+    python3 run.py fetch                выгрузить динамику по неделям
+    python3 run.py fetch --period PERIOD_DAILY   то же по дням (глубина ~60 дней)
     python3 run.py build                собрать wordstat_long.csv и wordstat_wide.xlsx
+    python3 run.py top-export           топ вложенных запросов по всем парам «фраза × регион»
     python3 run.py reconcile --manual … сверка с ручной выгрузкой
     python3 run.py top --phrase …       топ вложенных запросов (разбор омонимов)
 """
@@ -14,6 +16,7 @@
 from __future__ import annotations
 
 import argparse
+import dataclasses
 import datetime as dt
 import json
 import pathlib
@@ -27,6 +30,7 @@ from ws import fetch as fetch_mod
 from ws import periods
 from ws import reconcile as reconcile_mod
 from ws import regions as regions_mod
+from ws import top as top_mod
 from ws.api import WordstatClient, dynamics_rows
 
 TREE_PATH = config_mod.ROOT / "regions_tree.json"
@@ -46,6 +50,23 @@ def make_client(cfg) -> WordstatClient:
     )
 
 
+def apply_period(cfg, args):
+    """Разовая замена периода из командной строки, без правки config.yaml."""
+    period = getattr(args, "period", None)
+    return dataclasses.replace(cfg, period=period) if period else cfg
+
+
+def warn_daily_depth(cfg, today: dt.date) -> None:
+    start, clamped = cfg.effective_start_date(today)
+    if clamped:
+        print(
+            f"ВНИМАНИЕ: дневная детализация доступна за последние "
+            f"{cfg.daily_lookback_days} дней. Начало ряда сдвинуто с "
+            f"{cfg.start_date} на {start} — окна «до» старта кампании "
+            "в дневной выгрузке не будет, множители по ней не считаются."
+        )
+
+
 def require_resolved(cfg) -> None:
     if cfg.unresolved_regions:
         names = ", ".join(r.name for r in cfg.unresolved_regions)
@@ -58,6 +79,7 @@ def require_resolved(cfg) -> None:
 # --- команды ---------------------------------------------------------------
 
 def cmd_plan(cfg, args) -> int:
+    cfg = apply_period(cfg, args)
     today = periods.parse_date(args.today) if args.today else dt.date.today()
     resolved = cfg.resolved_regions()
     print(f"конфигурация      : {cfg.path}")
@@ -68,8 +90,9 @@ def cmd_plan(cfg, args) -> int:
     if cfg.unresolved_regions:
         print("  без ID           : " + ", ".join(r.name for r in cfg.unresolved_regions))
     print(f"устройств          : {len(cfg.devices)} — {', '.join(cfg.devices)}")
-    start = periods.week_start(cfg.start_date) if cfg.period == periods.PERIOD_WEEKLY else cfg.start_date
+    start, _ = cfg.effective_start_date(today)
     print(f"период             : {cfg.period}, {start} … {cfg.effective_end_date(today)}")
+    warn_daily_depth(cfg, today)
     calls = cfg.planned_calls()
     print(f"вызовов за прогон  : {calls}")
     print(f"стоимость прогона  : {calls * cfg.price_per_call_rub:.2f} ₽ "
@@ -164,8 +187,10 @@ def cmd_probe_regions(cfg, args) -> int:
 
 
 def cmd_fetch(cfg, args) -> int:
+    cfg = apply_period(cfg, args)
     require_resolved(cfg)
     run_date = periods.parse_date(args.run_date) if args.run_date else dt.date.today()
+    warn_daily_depth(cfg, run_date)
     plan = fetch_mod.build_plan(cfg, run_date)
     if args.dry_run:
         for call in plan:
@@ -195,6 +220,7 @@ def cmd_fetch(cfg, args) -> int:
 
 
 def cmd_build(cfg, args) -> int:
+    cfg = apply_period(cfg, args)
     raw_dir = pathlib.Path(args.raw) if args.raw else fetch_mod.latest_run(cfg)
     out_dir = pathlib.Path(args.out) if args.out else cfg.output_dir / raw_dir.name
     today = periods.parse_date(args.today) if args.today else None
@@ -251,6 +277,32 @@ def cmd_top(cfg, args) -> int:
     return 0
 
 
+def cmd_top_export(cfg, args) -> int:
+    """Снимок топа вложенных запросов по всем парам «фраза × регион»."""
+    require_resolved(cfg)
+    run_date = periods.parse_date(args.run_date) if args.run_date else dt.date.today()
+    raw_dir = top_mod.run_dir(cfg, run_date)
+    out_dir = pathlib.Path(args.out) if args.out else cfg.output_dir / raw_dir.name
+
+    if not args.build_only:
+        client = make_client(cfg)
+        planned = len(cfg.phrases) * len(cfg.resolved_regions()) * len(cfg.devices)
+        print(f"снимок топа {run_date}: {planned} вызовов, каталог {raw_dir}")
+        summary = top_mod.fetch(cfg, client, run_date=run_date, limit=args.limit)
+        print(f"  выгружено {summary['fetched']}, из кэша {summary['from_cache']}, "
+              f"ошибок {len(summary['errors'])}, стоимость {summary['cost_rub']:.2f} ₽")
+        if summary["errors"]:
+            for error in summary["errors"]:
+                print(f"  {error['call']}: {error['error']}")
+            print("Повторный запуск доберёт недостающее — уже полученное берётся из кэша.")
+            return 1
+
+    result = top_mod.build(cfg, raw_dir, out_dir, force=args.force)
+    print(f"  {result['top_csv']}")
+    print(f"  {result['top_xlsx']}")
+    return 0
+
+
 COMMANDS = {
     "plan": cmd_plan,
     "regions.fetch-tree": cmd_regions_fetch_tree,
@@ -260,6 +312,7 @@ COMMANDS = {
     "build": cmd_build,
     "reconcile": cmd_reconcile,
     "top": cmd_top,
+    "top-export": cmd_top_export,
 }
 
 
@@ -270,8 +323,10 @@ def main(argv=None) -> int:
     parser.add_argument("--config", default=str(config_mod.DEFAULT_CONFIG))
     sub = parser.add_subparsers(dest="command", required=True)
 
+    period_help = "период агрегации на этот запуск, поверх config.yaml"
     p_plan = sub.add_parser("plan", help="план вызовов и стоимость, без обращений к API")
     p_plan.add_argument("--today", help="считать эту дату сегодняшней (YYYY-MM-DD)")
+    p_plan.add_argument("--period", choices=periods.PERIODS, help=period_help)
 
     p_regions = sub.add_parser("regions", help="справочник регионов")
     regions_sub = p_regions.add_subparsers(dest="subcommand", required=True)
@@ -284,12 +339,14 @@ def main(argv=None) -> int:
     p_fetch = sub.add_parser("fetch", help="выгрузить динамику")
     p_fetch.add_argument("--run-date", help="дата прогона (YYYY-MM-DD), по умолчанию сегодня")
     p_fetch.add_argument("--dry-run", action="store_true", help="показать план, не вызывая API")
+    p_fetch.add_argument("--period", choices=periods.PERIODS, help=period_help)
 
     p_build = sub.add_parser("build", help="собрать CSV и XLSX из сырых ответов")
     p_build.add_argument("--raw", help="каталог прогона, по умолчанию последний")
     p_build.add_argument("--out", help="каталог результата")
     p_build.add_argument("--today", help="считать эту дату сегодняшней (для флага незакрытой недели)")
     p_build.add_argument("--force", action="store_true", help="перезаписать результат прогона")
+    p_build.add_argument("--period", choices=periods.PERIODS, help=period_help)
 
     p_rec = sub.add_parser("reconcile", help="сверка с ручной выгрузкой")
     p_rec.add_argument("--manual", required=True, help="файл ручной выгрузки (csv/tsv/xlsx)")
@@ -297,7 +354,16 @@ def main(argv=None) -> int:
     p_rec.add_argument("--out", help="каталог для таблицы сверки")
     p_rec.add_argument("--device", default="DEVICE_ALL")
 
-    p_top = sub.add_parser("top", help="топ вложенных запросов (GetTop) — разбор омонимов")
+    p_top_export = sub.add_parser(
+        "top-export", help="топ вложенных запросов по всем парам «фраза × регион» в CSV и XLSX")
+    p_top_export.add_argument("--run-date", help="дата прогона (YYYY-MM-DD), по умолчанию сегодня")
+    p_top_export.add_argument("--limit", type=int, default=50, help="сколько запросов в топе, по умолчанию 50")
+    p_top_export.add_argument("--out", help="каталог результата")
+    p_top_export.add_argument("--force", action="store_true", help="перезаписать результат прогона")
+    p_top_export.add_argument("--build-only", action="store_true",
+                              help="собрать из уже выгруженного, не обращаясь к API")
+
+    p_top = sub.add_parser("top", help="топ по одной паре «фраза × регион», вывод в консоль")
     p_top.add_argument("--phrase", required=True)
     p_top.add_argument("--region", required=True)
     p_top.add_argument("--limit", type=int, default=30)
