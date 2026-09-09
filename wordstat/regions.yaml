@@ -1,0 +1,189 @@
+# Справочник регионов: наше название -> ID Вордстата -> тип (кампания / контроль).
+#
+# Файл собирается командой `python3 run.py regions resolve` из ответа
+# GetRegionsTree. Руками правится только периметр (name / match / type /
+# cities / screens / campaign_start); поле region_id заполняет скрипт.
+#
+# Уровень (город или область) — общий для обеих групп, см. meta.level.
+
+meta:
+  level: oblast
+  decision: >-
+    Берём субъект федерации целиком — и в кампании, и в контроле. Причина:
+    контрольная группа изначально набрана областями (ТЗ, п. 9.2), а сравнивать
+    город с областью нельзя. Порог пригодности контроля (20 брендовых запросов
+    в месяц) на городском уровне не выдерживается почти нигде.
+  perimeter_source: >-
+    Фактический список размещения на 17.07.2026 (досье, п. 6.2). Города
+    свёрнуты в субъекты федерации; поле cities хранит исходные города,
+    screens — число экранов по досье.
+  campaign_start_default: '2026-07-17'
+  control_note: >-
+    Семь областей без размещения, по одной на федеральный округ кампании.
+    Краснодарский край в контроль не берём — у клиента там представительство.
+  resolved_at: null
+  regions_tree_fetched_at: null
+
+regions:
+# --- кампания -----------------------------------------------------------
+- name: Тюменская область
+  type: campaign
+  region_id: null
+  match: [Тюменская область]
+  cities: [Тюмень]
+  screens: 27
+  campaign_start: '2026-07-17'
+  note: >-
+    В дереве Яндекса ХМАО и ЯНАО могут быть дочерними узлами Тюменской области.
+    Проверить при resolve, что берём узел без округов, и зафиксировать решение.
+- name: Волгоградская область
+  type: campaign
+  region_id: null
+  match: [Волгоградская область]
+  cities: [Волгоград]
+  screens: 13
+  campaign_start: '2026-07-17'
+- name: Воронежская область
+  type: campaign
+  region_id: null
+  match: [Воронежская область]
+  cities: [Воронеж]
+  screens: 11
+  campaign_start: '2026-07-17'
+- name: Республика Мордовия
+  type: campaign
+  region_id: null
+  match: [Республика Мордовия, Мордовия]
+  cities: [Саранск]
+  screens: 10
+  campaign_start: '2026-07-17'
+  note: Открытый вопрос досье, п. 10.1 — нулевой отклик при формально работающих экранах.
+- name: Рязанская область
+  type: campaign
+  region_id: null
+  match: [Рязанская область]
+  cities: [Рязань]
+  screens: 7
+  campaign_start: '2026-07-17'
+- name: Орловская область
+  type: campaign
+  region_id: null
+  match: [Орловская область]
+  cities: [Орёл]
+  screens: 7
+  campaign_start: '2026-07-17'
+  note: >-
+    Омоним: запрос со словом «купить» собирает шум от названия региона.
+    Скрипт выгружает как есть, фильтрация — на этапе анализа (ТЗ, п. 8).
+- name: Костромская область
+  type: campaign
+  region_id: null
+  match: [Костромская область]
+  cities: [Кострома]
+  screens: 6
+  campaign_start: '2026-07-17'
+- name: Республика Башкортостан
+  type: campaign
+  region_id: null
+  match: [Республика Башкортостан, Башкортостан]
+  cities: [Уфа]
+  screens: 6
+  campaign_start: '2026-07-17'
+  note: >-
+    До августа 2026 была в контроле, переведена в кампанию. Ряды контроля
+    до этой даты пересчитаны — досье, п. 9.
+- name: Липецкая область
+  type: campaign
+  region_id: null
+  match: [Липецкая область]
+  cities: [Липецк]
+  screens: 6
+  campaign_start: '2026-07-17'
+- name: Саратовская область
+  type: campaign
+  region_id: null
+  match: [Саратовская область]
+  cities: [Саратов]
+  screens: 4
+  campaign_start: '2026-07-17'
+- name: Новосибирская область
+  type: campaign
+  region_id: null
+  match: [Новосибирская область]
+  cities: [Новосибирск]
+  screens: 4
+  campaign_start: '2026-07-17'
+- name: Томская область
+  type: campaign
+  region_id: null
+  match: [Томская область]
+  cities: [Томск]
+  screens: 4
+  campaign_start: '2026-07-17'
+- name: Ярославская область
+  type: campaign
+  region_id: null
+  match: [Ярославская область]
+  cities: [Ярославль, Рыбинск, Переславль-Залесский]
+  screens: 7
+  campaign_start: '2026-06-04'
+  note: >-
+    Пилот. Считается от своей даты старта, отдельной строкой (ТЗ, п. 9.3).
+- name: Вологодская область
+  type: campaign
+  region_id: null
+  match: [Вологодская область]
+  cities: [Череповец]
+  screens: 2
+  campaign_start: '2026-07-17'
+- name: Омская область
+  type: campaign
+  region_id: null
+  match: [Омская область]
+  cities: [Омск]
+  screens: 1
+  campaign_start: '2026-07-17'
+- name: Алтайский край
+  type: campaign
+  region_id: null
+  match: [Алтайский край]
+  cities: [Барнаул]
+  screens: 1
+  campaign_start: '2026-07-17'
+- name: Ивановская область
+  type: campaign
+  region_id: null
+  match: [Ивановская область]
+  cities: [Иваново]
+  screens: 1
+  campaign_start: '2026-07-17'
+
+# --- контроль -----------------------------------------------------------
+- name: Ростовская область
+  type: control
+  region_id: null
+  match: [Ростовская область]
+- name: Астраханская область
+  type: control
+  region_id: null
+  match: [Астраханская область]
+- name: Тульская область
+  type: control
+  region_id: null
+  match: [Тульская область]
+- name: Кировская область
+  type: control
+  region_id: null
+  match: [Кировская область]
+- name: Пензенская область
+  type: control
+  region_id: null
+  match: [Пензенская область]
+- name: Курганская область
+  type: control
+  region_id: null
+  match: [Курганская область]
+- name: Кемеровская область
+  type: control
+  region_id: null
+  match: [Кемеровская область, Кемеровская область — Кузбасс]

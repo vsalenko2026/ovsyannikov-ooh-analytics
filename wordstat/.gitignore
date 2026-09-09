@@ -1,0 +1,8 @@
+# сырые ответы и собранные выгрузки — на диске, не в git
+raw/*
+!raw/.gitkeep
+output/*
+!output/.gitkeep
+
+# справочник регионов, выкачанный из API (восстанавливается вызовом regions fetch-tree)
+regions_tree.json
