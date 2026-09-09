@@ -241,14 +241,18 @@ class WordstatClient:
 
 
 def dynamics_rows(response: dict) -> list[dict]:
-    """Ряд из ответа GetDynamics: `count` приходит строкой, приводим к int."""
+    """Ряд из ответа GetDynamics: `count` приходит строкой, приводим к int.
+
+    Нулевую неделю сервис отдаёт как {"date": ...} — без `count` и без `share`.
+    Пропуск означает ноль обращений, поэтому count=0, share=None.
+    """
     rows = []
     for item in response.get("results") or response.get("dynamics") or []:
         share = item.get("share")
         rows.append(
             {
                 "date": item["date"],
-                "count": int(item["count"]),
+                "count": int(item.get("count") or 0),
                 "share": float(share) if share is not None else None,
             }
         )

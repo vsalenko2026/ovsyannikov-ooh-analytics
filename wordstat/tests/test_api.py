@@ -86,6 +86,15 @@ class TestParsing(unittest.TestCase):
         self.assertEqual(rows[0]["count"], 42)
         self.assertIsInstance(rows[0]["count"], int)
 
+    def test_zero_week_arrives_without_count(self):
+        """Нулевую неделю сервис отдаёт без count и share — это ноль, не пропуск."""
+        rows = dynamics_rows({"results": [
+            {"date": "2026-03-30T00:00:00Z"},
+            {"date": "2026-04-06T00:00:00Z", "count": "1", "share": 2.3e-06},
+        ]})
+        self.assertEqual([r["count"] for r in rows], [0, 1])
+        self.assertIsNone(rows[0]["share"])
+
 
 if __name__ == "__main__":
     unittest.main()

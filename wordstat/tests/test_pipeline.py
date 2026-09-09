@@ -147,6 +147,24 @@ class TestBuild(PipelineCase):
         self.assertEqual(first["is_partial"], "0")
         self.assertIn(first["region_type"], ("campaign", "control"))
 
+    def test_zero_week_without_count_becomes_zero(self):
+        """Боевой API опускает count и share на нулевых неделях (см. ws.build)."""
+        region = next(r for r in self.cfg.regions if r.region_id)
+        record = {
+            "meta": {"region_name": region.name, "region_type": region.type},
+            "request": {
+                "phrase": "овсянников мыло", "period": "PERIOD_WEEKLY",
+                "regions": [region.region_id], "devices": ["DEVICE_ALL"],
+            },
+            "response": {"results": [
+                {"date": "2026-08-03T00:00:00Z"},
+                {"date": "2026-08-10T00:00:00Z", "count": "7", "share": 0.0001},
+            ]},
+        }
+        rows = build_mod.to_rows(self.cfg, [record], "start", today=dt.date(2026, 9, 9))
+        self.assertEqual([r["count"] for r in rows], [0, 7])
+        self.assertEqual(rows[0]["share"], "")
+
     def test_partial_week_is_flagged(self):
         # Если считать «сегодня» 05.08, неделя 03–09.08 ещё не закрыта.
         summary, out = self.build(today=dt.date(2026, 8, 5))

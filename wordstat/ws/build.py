@@ -82,6 +82,8 @@ def to_rows(cfg, records: list[dict], anchor: str, today: dt.date | None = None)
         for item in payload:
             day = periods.parse_api_date(item["date"])
             start, end = periods.period_bounds(day, request.get("period", cfg.period), anchor)
+            # Нулевую неделю API отдаёт как {"date": ...} без count и share:
+            # оба поля пропадают парой. Пропуск — это ноль, а не «нет данных».
             share = item.get("share")
             rows.append(
                 {
@@ -93,7 +95,7 @@ def to_rows(cfg, records: list[dict], anchor: str, today: dt.date | None = None)
                     "region_id": str(region_id),
                     "region_type": region_type,
                     "device": device,
-                    "count": int(item["count"]),
+                    "count": int(item.get("count") or 0),
                     "share": "" if share is None else float(share),
                     "is_partial": "0" if periods.is_closed(end, today) else "1",
                     "_order": order.get(region_name, 999),
