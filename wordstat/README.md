@@ -88,6 +88,45 @@ python3 run.py top-export                     # что именно ищут: Ge
 в `.gitignore`, скрипт читает переменные окружения и без них останавливается
 с понятным сообщением.
 
+## Запуск на своём компьютере
+
+Нужен Python 3.9 или новее. Проверить: `python3 --version` (в Windows —
+`py --version`; дальше вместо `python3` пишите `py`).
+
+```bash
+git clone -b claude/new-session-w46wfu https://github.com/vsalenko2026/ovsyannikov-ooh-analytics.git
+cd ovsyannikov-ooh-analytics/wordstat
+python3 -m pip install -r requirements.txt
+```
+
+Создайте в каталоге `wordstat` файл `.env` — обычным блокнотом, две строки:
+
+```
+YANDEX_API_KEY=AQVN…
+YANDEX_FOLDER_ID=b1g…
+```
+
+Дальше по порядку:
+
+```bash
+python3 run.py regions fetch-tree     # справочник регионов, бесплатно
+python3 run.py regions resolve        # проставить ID; посмотреть, все ли нашлись
+python3 run.py plan                   # 72 вызова, 1,44 ₽ — сверить перед тратой
+python3 run.py probe-regions          # разовая проверка поведения API
+
+python3 run.py fetch                  # недельный ряд
+python3 run.py build
+python3 run.py fetch --period PERIOD_DAILY    # дневной ряд
+python3 run.py build --period PERIOD_DAILY
+python3 run.py top-export             # топ вложенных запросов
+```
+
+Результат — три каталога в `output/`: `ГГГГ-ММ-ДД`, `…-day`, `…-top`.
+Сырые ответы остаются в `raw/` и нужны для воспроизводимости — не удалять.
+
+Если что-то упало, прогон перезапускается той же командой: уже полученное
+берётся из кэша, API повторно не дёргается.
+
 ## Источник данных
 
 Wordstat — сервис внутри Yandex Search API v2 (AI Studio). Веб-парсинг не
