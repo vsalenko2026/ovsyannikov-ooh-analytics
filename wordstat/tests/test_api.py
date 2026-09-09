@@ -16,13 +16,25 @@ def client(session, **kwargs):
 
 
 class TestPhrase(unittest.TestCase):
-    def test_operators_rejected(self):
+    def test_operators_rejected_for_weekly(self):
         for phrase in ('"овсянников мыло"', "!овсянников", "[овсянников мыло]", "мыло|крем"):
             with self.assertRaises(ValueError):
-                validate_phrase(phrase)
+                validate_phrase(phrase, "PERIOD_WEEKLY")
 
-    def test_plus_allowed(self):
-        validate_phrase("овсянников +мыло")
+    def test_operators_allowed_for_daily(self):
+        # по дням сервер принимает все операторы
+        validate_phrase('"овсянников мыло"', "PERIOD_DAILY")
+        validate_phrase("!овсянников !мыло", "PERIOD_DAILY")
+
+    def test_plus_allowed_everywhere(self):
+        validate_phrase("овсянников +мыло", "PERIOD_WEEKLY")
+        validate_phrase("овсянников +мыло", "PERIOD_MONTHLY")
+
+    def test_empty_and_too_long_rejected(self):
+        with self.assertRaises(ValueError):
+            validate_phrase("   ", "PERIOD_DAILY")
+        with self.assertRaises(ValueError):
+            validate_phrase("а" * 401, "PERIOD_DAILY")
 
 
 class TestRetries(unittest.TestCase):

@@ -17,7 +17,9 @@ import urllib.parse
 
 import requests
 
-# Символы, которые GetDynamics не принимает: поддерживается только оператор `+`.
+# GetDynamics поддерживает все поисковые операторы при детализации по дням.
+# При детализации по неделям и месяцам — только оператор `+`; остальные
+# символы сервер отвергает.
 FORBIDDEN_PHRASE_CHARS = '!"«»[]()|'
 
 # Коды, по которым имеет смысл повторить вызов.
@@ -40,17 +42,24 @@ class WordstatHTTPError(WordstatError):
         super().__init__(f"{path}: HTTP {status}: {body[:500]}")
 
 
-def validate_phrase(phrase: str) -> None:
-    """Проверить фразу до вызова: сервер отвергает операторы кроме `+`."""
+def validate_phrase(phrase: str, period: str | None = None) -> None:
+    """Проверить фразу до вызова, чтобы не тратить квоту на заведомый отказ.
+
+    Операторы (`!`, кавычки, `[]`, `()`, `|`) допустимы только при детализации
+    по дням. При недельной и месячной агрегации сервер принимает лишь `+`.
+    """
     if not phrase or not phrase.strip():
         raise ValueError("пустая фраза")
     if len(phrase) > 400:
         raise ValueError(f"фраза длиннее 400 символов: {phrase[:60]}…")
+    if period in (None, "PERIOD_DAILY"):
+        return
     bad = sorted({c for c in phrase if c in FORBIDDEN_PHRASE_CHARS})
     if bad:
         raise ValueError(
             f"фраза {phrase!r} содержит операторы {''.join(bad)}, "
-            "GetDynamics принимает только `+`"
+            f"при {period} принимается только `+`. "
+            "С операторами выгружайте по дням: --period PERIOD_DAILY"
         )
 
 
@@ -196,7 +205,7 @@ class WordstatClient:
         `to_date` обязан быть последним днём периода — выравнивание делает
         вызывающий код (`ws.periods.period_end`).
         """
-        validate_phrase(phrase)
+        validate_phrase(phrase, period)
         payload: dict = {
             "phrase": phrase,
             "period": period,

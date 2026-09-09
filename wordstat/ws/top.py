@@ -97,7 +97,7 @@ def fetch(cfg, client, run_date: dt.date | None = None, limit: int = 50,
             except (ValueError, OSError):
                 pass
         try:
-            validate_phrase(phrase)
+            validate_phrase(phrase)  # GetTop: период не задаётся, ограничение не применяется
             response = client.get_top(
                 phrase, regions=[region.region_id], devices=[device], num_phrases=limit
             )
