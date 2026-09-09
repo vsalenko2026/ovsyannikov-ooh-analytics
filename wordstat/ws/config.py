@@ -36,19 +36,26 @@ def load_env(path: pathlib.Path = ENV_FILE) -> None:
         os.environ.setdefault(key, value)
 
 
-def credentials() -> tuple[str, str]:
-    """Ключ и каталог — только из окружения, в репозитории их нет."""
+def credentials() -> tuple[str, str, bool]:
+    """Ключ, каталог и признак «ключ подставляет прокси».
+
+    `YANDEX_AUTH_VIA_PROXY=1` — ключ лежит в API-доступах облачного окружения
+    и подставляется в заголовок за пределами сессии; в самой сессии его нет.
+    """
     load_env()
     key = os.environ.get("YANDEX_API_KEY", "")
     folder = os.environ.get("YANDEX_FOLDER_ID", "")
-    missing = [n for n, v in (("YANDEX_API_KEY", key), ("YANDEX_FOLDER_ID", folder)) if not v]
+    via_proxy = os.environ.get("YANDEX_AUTH_VIA_PROXY", "").strip().lower() in ("1", "true", "yes")
+    missing = [n for n, v in (("YANDEX_FOLDER_ID", folder),) if not v]
+    if not key and not via_proxy:
+        missing.insert(0, "YANDEX_API_KEY")
     if missing:
         raise SystemExit(
             "Нет доступов: " + ", ".join(missing) + ".\n"
             "Скопируйте .env.example в .env и заполните значениями от заказчика "
             "(см. README, раздел «Доступы»)."
         )
-    return key, folder
+    return key, folder, via_proxy
 
 
 @dataclasses.dataclass(frozen=True)

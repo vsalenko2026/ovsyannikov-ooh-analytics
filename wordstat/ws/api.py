@@ -70,12 +70,14 @@ class WordstatClient:
         price_per_call_rub: float = 0.02,
         session: requests.Session | None = None,
         sleep=time.sleep,
+        auth_via_proxy: bool = False,
     ):
-        if not api_key:
+        if not api_key and not auth_via_proxy:
             raise WordstatError("не задан YANDEX_API_KEY")
         if not folder_id:
             raise WordstatError("не задан YANDEX_FOLDER_ID")
         self.api_key = api_key
+        self.auth_via_proxy = auth_via_proxy
         self.folder_id = folder_id
         self.base_url = base_url.rstrip("/")
         self.pause_seconds = pause_seconds
@@ -111,10 +113,11 @@ class WordstatClient:
         url = urllib.parse.urljoin(self.base_url + "/", path.lstrip("/"))
         body = dict(payload)
         body["folderId"] = self.folder_id
-        headers = {
-            "Authorization": f"Api-Key {self.api_key}",
-            "Content-Type": "application/json",
-        }
+        headers = {"Content-Type": "application/json"}
+        if not self.auth_via_proxy:
+            # При auth_via_proxy заголовок подставляет прокси Anthropic:
+            # ключ хранится в настройках окружения и в сессию не попадает.
+            headers["Authorization"] = f"Api-Key {self.api_key}"
         last_error: Exception | None = None
 
         for attempt in range(1, self.max_attempts + 1):

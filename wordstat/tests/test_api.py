@@ -77,3 +77,20 @@ class TestParsing(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestAuthViaProxy(unittest.TestCase):
+    def test_header_is_omitted_when_proxy_supplies_key(self):
+        session = FakeSession(generator=weekly_series)
+        api = WordstatClient(
+            api_key="", folder_id="folder", session=session, auth_via_proxy=True,
+            pause_seconds=0, backoff_base_seconds=0, sleep=lambda _s: None,
+        )
+        api.get_dynamics("овсянников мыло", "2026-08-31T00:00:00Z", "2026-09-06T23:59:59Z",
+                         "PERIOD_WEEKLY", regions=["16"], devices=["DEVICE_ALL"])
+        self.assertNotIn("Authorization", session.requests[0]["headers"])
+        self.assertEqual(session.requests[0]["body"]["folderId"], "folder")
+
+    def test_empty_key_without_proxy_is_refused(self):
+        with self.assertRaises(WordstatError):
+            WordstatClient(api_key="", folder_id="folder")

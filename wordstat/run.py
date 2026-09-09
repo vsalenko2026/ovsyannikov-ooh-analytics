@@ -37,10 +37,13 @@ TREE_PATH = config_mod.ROOT / "regions_tree.json"
 
 
 def make_client(cfg) -> WordstatClient:
-    key, folder = config_mod.credentials()
+    key, folder, via_proxy = config_mod.credentials()
+    if via_proxy:
+        print("ключ подставляет прокси окружения — в сессии его нет")
     return WordstatClient(
         api_key=key,
         folder_id=folder,
+        auth_via_proxy=via_proxy,
         base_url=cfg.base_url,
         pause_seconds=cfg.pause_seconds,
         max_attempts=cfg.max_attempts,
