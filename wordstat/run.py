@@ -284,14 +284,19 @@ def cmd_top_export(cfg, args) -> int:
     """Снимок топа вложенных запросов по всем парам «фраза × регион»."""
     require_resolved(cfg)
     run_date = periods.parse_date(args.run_date) if args.run_date else dt.date.today()
-    raw_dir = top_mod.run_dir(cfg, run_date)
+    tag = args.tag or ""
+    raw_dir = top_mod.run_dir(cfg, run_date, tag)
     out_dir = pathlib.Path(args.out) if args.out else cfg.output_dir / raw_dir.name
 
     if not args.build_only:
         client = make_client(cfg)
-        planned = len(cfg.phrases) * len(cfg.resolved_regions()) * len(cfg.devices)
-        print(f"снимок топа {run_date}: {planned} вызовов, каталог {raw_dir}")
-        summary = top_mod.fetch(cfg, client, run_date=run_date, limit=args.limit)
+        phrases = top_mod.select_phrases(cfg, args.only)
+        planned = len(phrases) * len(cfg.resolved_regions()) * len(cfg.devices)
+        print(f"снимок топа {run_date}: {len(phrases)} фраз × "
+              f"{len(cfg.resolved_regions())} регионов = {planned} вызовов, "
+              f"глубина топа {args.limit}, каталог {raw_dir}")
+        summary = top_mod.fetch(cfg, client, run_date=run_date, limit=args.limit,
+                                only=args.only, tag=tag)
         print(f"  выгружено {summary['fetched']}, из кэша {summary['from_cache']}, "
               f"ошибок {len(summary['errors'])}, стоимость {summary['cost_rub']:.2f} ₽")
         if summary["errors"]:
@@ -365,6 +370,10 @@ def main(argv=None) -> int:
     p_top_export.add_argument("--force", action="store_true", help="перезаписать результат прогона")
     p_top_export.add_argument("--build-only", action="store_true",
                               help="собрать из уже выгруженного, не обращаясь к API")
+    p_top_export.add_argument("--only", action="append", metavar="ФРАЗА",
+                              help="взять только эти фразы; можно повторять")
+    p_top_export.add_argument("--tag", help="метка прогона: отдельный каталог, "
+                                            "чтобы не смешивать с полным снимком")
 
     p_top = sub.add_parser("top", help="топ по одной паре «фраза × регион», вывод в консоль")
     p_top.add_argument("--phrase", required=True)

@@ -126,3 +126,39 @@ class TestTop(DailyCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestTopSubset(DailyCase):
+    def test_only_filters_phrases(self):
+        self.assertEqual(
+            top_mod.select_phrases(self.cfg, ["овсянников мыло"]), ("овсянников мыло",)
+        )
+
+    def test_only_is_case_insensitive_and_deduplicated(self):
+        self.assertEqual(
+            top_mod.select_phrases(self.cfg, ["Овсянников Мыло", "овсянников мыло"]),
+            ("овсянников мыло",),
+        )
+
+    def test_unknown_phrase_is_an_error(self):
+        with self.assertRaises(SystemExit):
+            top_mod.select_phrases(self.cfg, ["овсянников отзывы"])
+
+    def test_tag_gives_its_own_run_dir(self):
+        run = dt.date(2026, 9, 9)
+        self.assertEqual(top_mod.run_dir(self.cfg, run).name, "2026-09-09-top")
+        self.assertEqual(top_mod.run_dir(self.cfg, run, "core").name, "2026-09-09-top-core")
+
+    def test_subset_run_covers_only_chosen_phrase(self):
+        run = dt.date(2026, 9, 9)
+        summary = top_mod.fetch(self.cfg, self.client, run_date=run, limit=100,
+                                only=["овсянников мыло"], tag="core", log=lambda *_: None)
+        self.assertEqual(summary["planned"], 3)          # 1 фраза × 3 региона
+        self.assertEqual(summary["phrases"], ["овсянников мыло"])
+        out = self.root / "output" / "2026-09-09-top-core"
+        result = top_mod.build(self.cfg, top_mod.run_dir(self.cfg, run, "core"), out,
+                               log=lambda *_: None)
+        self.assertEqual(result["phrases"], 1)
+        from openpyxl import load_workbook
+        book = load_workbook(out / "wordstat_top.xlsx")
+        self.assertEqual(len(book.sheetnames), 2)        # вложенные + ассоциации

@@ -23,12 +23,30 @@ COLUMNS = [
 ]
 
 
-def run_name(run_date: dt.date) -> str:
-    return f"{run_date.isoformat()}-top"
+def run_name(run_date: dt.date, tag: str = "") -> str:
+    """Имя прогона. Метка разводит прогоны с разными наборами фраз и глубиной."""
+    return f"{run_date.isoformat()}-top" + (f"-{tag}" if tag else "")
 
 
-def run_dir(cfg, run_date: dt.date) -> pathlib.Path:
-    return cfg.raw_dir / run_name(run_date)
+def run_dir(cfg, run_date: dt.date, tag: str = "") -> pathlib.Path:
+    return cfg.raw_dir / run_name(run_date, tag)
+
+
+def select_phrases(cfg, only=None) -> tuple[str, ...]:
+    """Подмножество фраз из конфига. Опечатка в названии — ошибка, не тишина."""
+    if not only:
+        return tuple(cfg.phrases)
+    known = {p.casefold(): p for p in cfg.phrases}
+    chosen, unknown = [], []
+    for name in only:
+        key = str(name).strip().casefold()
+        (chosen.append(known[key]) if key in known else unknown.append(name))
+    if unknown:
+        raise SystemExit(
+            "нет таких фраз в config.yaml: " + ", ".join(map(str, unknown)) +
+            ".\nЕсть: " + ", ".join(cfg.phrases)
+        )
+    return tuple(dict.fromkeys(chosen))
 
 
 def request_body(cfg, phrase: str, region_id: str, device: str, limit: int) -> dict:
@@ -42,21 +60,25 @@ def filename(body: dict) -> str:
     return f"{body['regions'][0]}_{slug(body['phrase'])}_{slug(body['devices'][0])}_{digest}.json"
 
 
-def fetch(cfg, client, run_date: dt.date | None = None, limit: int = 50, log=print) -> dict:
-    """Снимок топа по всем парам «фраза × регион». Кэш — как в основной выгрузке."""
+def fetch(cfg, client, run_date: dt.date | None = None, limit: int = 50,
+          only=None, tag: str = "", log=print) -> dict:
+    """Снимок топа по парам «фраза × регион». Кэш — как в основной выгрузке."""
     run_date = run_date or dt.date.today()
-    directory = run_dir(cfg, run_date)
+    phrases = select_phrases(cfg, only)
+    directory = run_dir(cfg, run_date, tag)
     directory.mkdir(parents=True, exist_ok=True)
     summary = {
         "run_date": run_date.isoformat(),
         "method": "GetTop",
         "limit": limit,
+        "tag": tag,
+        "phrases": list(phrases),
         "planned": 0, "fetched": 0, "from_cache": 0, "errors": [],
     }
 
     plan = [
         (phrase, region, device)
-        for phrase in cfg.phrases
+        for phrase in phrases
         for region in cfg.resolved_regions()
         for device in cfg.devices
     ]
@@ -167,7 +189,8 @@ def write_xlsx(cfg, rows: list[dict], path: pathlib.Path) -> pathlib.Path:
     header_font = Font(bold=True)
     control_fill = PatternFill("solid", fgColor="EFEFEF")
 
-    for phrase in cfg.phrases:
+    present = [p for p in cfg.phrases if any(r["phrase"] == p for r in rows)]
+    for phrase in present:
         for kind, label in (("nested", ""), ("association", "ассоциации")):
             subset = [r for r in rows if r["phrase"] == phrase and r["kind"] == kind]
             if not subset:
