@@ -14,10 +14,31 @@
 # Использование: bash tools/step.sh <номер шага>
 
 set -euo pipefail
+trap 'echo "ОШИБКА на строке $LINENO: $BASH_COMMAND" >&2' ERR
 cd "$(dirname "$0")/.."
 
 STEP="${1:?укажите номер шага, 1..7}"
 RUN_DATE="$(date -u +%F)"
+
+log() { printf '\n>>> %s\n' "$*"; }
+
+# Зависимости ставим сами: сессия эфемерна, а setup-скрипт окружения может
+# быть пустым. Уже установленное pip пропускает за секунду.
+log "зависимости"
+python3 -m pip install --quiet --disable-pip-version-check -r requirements.txt
+
+log "проверка окружения"
+python3 - <<'PYCHECK'
+import importlib.util, sys
+missing = [m for m in ("yaml", "requests", "openpyxl") if not importlib.util.find_spec(m)]
+if missing:
+    sys.exit("не установлены модули: " + ", ".join(missing))
+sys.path.insert(0, ".")
+from ws import config          # тот же загрузчик доступов, что и у самих команд
+key, folder, via_proxy = config.credentials()
+print("окружение в порядке: folderId есть, ключ " +
+      ("подставляет прокси" if via_proxy else "в переменных"))
+PYCHECK
 
 only_args() {                       # фразы группы -> набор --only
   local index="$1" args=()
@@ -27,6 +48,7 @@ only_args() {                       # фразы группы -> набор --on
   printf '%s\n' "${args[@]}"
 }
 
+log "разбивка фраз по группам"
 mapfile -t GROUP1 < <(only_args 1)
 mapfile -t GROUP2 < <(only_args 2)
 
@@ -37,6 +59,7 @@ case "$CHUNKS" in
      echo "Пересоберите расписание под новое число групп." >&2; exit 2 ;;
 esac
 
+log "шаг $STEP"
 case "$STEP" in
   1) python3 run.py fetch "${GROUP1[@]}" ;;
   2) python3 run.py fetch "${GROUP2[@]}"
@@ -52,14 +75,27 @@ case "$STEP" in
 esac
 
 # Результат должен пережить сессию: контейнер эфемерный.
+log "сохранение результата"
 git config user.email >/dev/null 2>&1 || git config user.email "noreply@anthropic.com"
 git config user.name  >/dev/null 2>&1 || git config user.name  "Claude"
 git add raw output
+
 if git diff --cached --quiet; then
   echo "нечего коммитить: всё уже было в кэше"
-else
-  git commit -q -m "Выгрузка $RUN_DATE, шаг $STEP"
-  git pull --rebase --quiet
-  git push --quiet
-  echo "закоммичено и запушено"
+  exit 0
 fi
+
+git commit -q -m "Выгрузка $RUN_DATE, шаг $STEP"
+echo "закоммичено: $(git show --stat --oneline HEAD | tail -1)"
+
+if ! git pull --rebase --quiet; then
+  echo "НЕ УДАЛОСЬ ПОДТЯНУТЬ ВЕТКУ: коммит есть локально, но не уехал." >&2
+  echo "Разберите конфликт и запушьте вручную — данные не потеряны." >&2
+  exit 3
+fi
+if ! git push --quiet; then
+  echo "ПУШ НЕ ПРОШЁЛ: коммит есть локально, но не уехал на GitHub." >&2
+  echo "Данные не потеряны, но переживут только эту сессию — запушьте вручную." >&2
+  exit 4
+fi
+echo "запушено в $(git rev-parse --abbrev-ref HEAD)"
