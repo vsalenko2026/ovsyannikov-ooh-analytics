@@ -213,6 +213,11 @@ def cmd_fetch(cfg, args) -> int:
     print(f"  обращений к API       : {summary['http_calls']} (повторов: {summary['retries']})")
     print(f"  тарифицируемых        : {summary['billable_calls']}")
     print(f"  стоимость прогона     : {summary['cost_rub']:.2f} ₽")
+    if summary.get("stopped_early"):
+        print(f"\nПРОГОН НЕПОЛНЫЙ: {summary['stopped_early']}.")
+        print("Выгруженное сохранено. Повтор доберёт остальное — уже полученное "
+              "берётся из кэша, заново не оплачивается.")
+        return 5
     if summary["errors"]:
         print("\nне выгружено:")
         for error in summary["errors"]:
@@ -299,6 +304,10 @@ def cmd_top_export(cfg, args) -> int:
                                 only=args.only, tag=tag)
         print(f"  выгружено {summary['fetched']}, из кэша {summary['from_cache']}, "
               f"ошибок {len(summary['errors'])}, стоимость {summary['cost_rub']:.2f} ₽")
+        if summary.get("stopped_early"):
+            print(f"ПРОГОН НЕПОЛНЫЙ: {summary['stopped_early']}. "
+                  "Выгруженное сохранено, повтор доберёт остальное из кэша.")
+            return 5
         if summary["errors"]:
             for error in summary["errors"]:
                 print(f"  {error['call']}: {error['error']}")

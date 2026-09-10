@@ -14,8 +14,11 @@ import pathlib
 import re
 
 from . import periods
-from .api import WordstatError
+from .api import WordstatError, WordstatQuotaError
 from .config import select_phrases
+
+# Столько неудач подряд означает, что дело не в отдельном вызове.
+BREAKER_LIMIT = 5
 
 SLUG_RE = re.compile(r"[^0-9A-Za-zА-Яа-яЁё]+")
 
@@ -148,6 +151,7 @@ def fetch(cfg, client, run_date: dt.date | None = None, only=None, log=print) ->
         "fetched": 0,
         "from_cache": 0,
         "errors": [],
+        "stopped_early": "",
         "period": cfg.period,
         "from_date": plan[0].from_date.isoformat() if plan else None,
         "to_date": plan[0].to_date.isoformat() if plan else None,
@@ -156,6 +160,7 @@ def fetch(cfg, client, run_date: dt.date | None = None, only=None, log=print) ->
         "regions": len(cfg.resolved_regions()),
     }
 
+    consecutive_errors = 0
     for index, call in enumerate(plan, 1):
         path = directory / call.filename
         if cached(path, call):
@@ -170,10 +175,25 @@ def fetch(cfg, client, run_date: dt.date | None = None, only=None, log=print) ->
                 regions=[call.region_id],
                 devices=[call.device],
             )
+        except WordstatQuotaError as exc:
+            summary["stopped_early"] = f"квота исчерпана на {index}-м вызове из {len(plan)}"
+            log(f"  [{index}/{len(plan)}] КВОТА   {exc}")
+            log("  Прогон остановлен: лимит отпускает на границе часа UTC. "
+                "Уже полученное сохранено, повтор доберёт остальное из кэша.")
+            break
         except (WordstatError, ValueError) as exc:
             summary["errors"].append({"call": call.describe(), "error": str(exc)})
             log(f"  [{index}/{len(plan)}] ОШИБКА  {call.describe()}: {exc}")
+            consecutive_errors += 1
+            if consecutive_errors >= BREAKER_LIMIT:
+                summary["stopped_early"] = (
+                    f"{BREAKER_LIMIT} неудачных вызовов подряд на {index}-м из {len(plan)}"
+                )
+                log(f"  Прогон остановлен: {BREAKER_LIMIT} неудач подряд — "
+                    "дальше молотить бессмысленно, разбирайте причину.")
+                break
             continue
+        consecutive_errors = 0
         save(path, call, response, attempts=1)
         summary["fetched"] += 1
         log(f"  [{index}/{len(plan)}] ок      {call.describe()}")

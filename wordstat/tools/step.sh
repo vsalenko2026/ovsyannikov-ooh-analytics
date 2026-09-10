@@ -59,7 +59,11 @@ case "$CHUNKS" in
      echo "Пересоберите расписание под новое число групп." >&2; exit 2 ;;
 esac
 
+# Что бы ни случилось на шаге, выгруженное надо закоммитить: контейнер
+# эфемерен, и данные, оставшиеся только на его диске, всё равно что потеряны.
 log "шаг $STEP"
+set +e
+trap - ERR                          # ниже неуспех — штатный исход, не поломка
 case "$STEP" in
   1) python3 run.py fetch "${GROUP1[@]}" ;;
   2) python3 run.py fetch "${GROUP2[@]}"
@@ -73,6 +77,14 @@ case "$STEP" in
                                --only "овсянников купить" --limit 200 --tag core --force ;;
   *) echo "Неизвестный шаг: $STEP (ожидается 1..7)" >&2; exit 2 ;;
 esac
+STEP_CODE=$?
+set -e
+trap 'echo "ОШИБКА на строке $LINENO: $BASH_COMMAND" >&2' ERR
+if [ "$STEP_CODE" -eq 5 ]; then
+  echo "шаг завершился неполным (квота или череда отказов) — сохраняю, что успело выгрузиться"
+elif [ "$STEP_CODE" -ne 0 ]; then
+  echo "шаг завершился с кодом $STEP_CODE — всё равно сохраняю выгруженное" >&2
+fi
 
 # Результат должен пережить сессию: контейнер эфемерный.
 log "сохранение результата"
@@ -82,13 +94,13 @@ git add raw output
 
 if git diff --cached --quiet; then
   echo "нечего коммитить: всё уже было в кэше"
-  exit 0
+  exit "$STEP_CODE"
 fi
 
 git commit -q -m "Выгрузка $RUN_DATE, шаг $STEP"
 echo "закоммичено: $(git show --stat --oneline HEAD | tail -1)"
 
-if ! git pull --rebase --quiet; then
+if ! git pull --rebase --autostash --quiet; then
   echo "НЕ УДАЛОСЬ ПОДТЯНУТЬ ВЕТКУ: коммит есть локально, но не уехал." >&2
   echo "Разберите конфликт и запушьте вручную — данные не потеряны." >&2
   exit 3
@@ -99,3 +111,4 @@ if ! git push --quiet; then
   exit 4
 fi
 echo "запушено в $(git rev-parse --abbrev-ref HEAD)"
+exit "$STEP_CODE"

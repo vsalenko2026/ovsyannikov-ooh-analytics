@@ -269,3 +269,43 @@ class TestReconcile(PipelineCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestRunStopsEarly(PipelineCase):
+    """Прогон обязан останавливаться сам, а не молотить впустую весь план."""
+
+    def test_quota_stops_the_run_and_keeps_what_was_fetched(self):
+        from tests.fake_api import FakeResponse
+        from ws.api import WordstatClient
+        session = FakeSession(
+            [FakeResponse(payload=weekly_series({"fromDate": "2026-08-03", "toDate": "2026-09-06"})),
+             FakeResponse(429, text="wordstatRequestsPerHour")]
+        )
+        client = WordstatClient(api_key="k", folder_id="f", session=session,
+                                pause_seconds=0, backoff_base_seconds=0, sleep=lambda _s: None)
+        summary = fetch_mod.fetch(self.cfg, client, run_date=dt.date(2026, 9, 9), log=lambda *_: None)
+        self.assertIn("квота", summary["stopped_early"])
+        self.assertEqual(summary["fetched"], 1)          # первый вызов сохранён
+        self.assertEqual(len(session.requests), 2)       # после отказа больше не звоним
+
+    def test_breaker_stops_after_repeated_failures(self):
+        from tests.fake_api import FakeResponse
+        from ws.api import WordstatClient
+        session = FakeSession([FakeResponse(500, text="boom") for _ in range(50)])
+        client = WordstatClient(api_key="k", folder_id="f", session=session, max_attempts=1,
+                                pause_seconds=0, backoff_base_seconds=0, sleep=lambda _s: None)
+        summary = fetch_mod.fetch(self.cfg, client, run_date=dt.date(2026, 9, 9), log=lambda *_: None)
+        self.assertIn("подряд", summary["stopped_early"])
+        self.assertEqual(len(summary["errors"]), fetch_mod.BREAKER_LIMIT)
+
+    def test_a_single_failure_does_not_stop_the_run(self):
+        from tests.fake_api import FakeResponse
+        from ws.api import WordstatClient
+        ok = lambda: FakeResponse(payload=weekly_series({"fromDate": "2026-08-03", "toDate": "2026-09-06"}))
+        session = FakeSession([ok(), FakeResponse(500, text="boom"), ok(), ok(), ok(), ok()])
+        client = WordstatClient(api_key="k", folder_id="f", session=session, max_attempts=1,
+                                pause_seconds=0, backoff_base_seconds=0, sleep=lambda _s: None)
+        summary = fetch_mod.fetch(self.cfg, client, run_date=dt.date(2026, 9, 9), log=lambda *_: None)
+        self.assertEqual(summary["stopped_early"], "")
+        self.assertEqual(len(summary["errors"]), 1)
+        self.assertEqual(summary["fetched"], 5)

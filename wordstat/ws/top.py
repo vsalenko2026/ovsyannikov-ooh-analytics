@@ -13,9 +13,10 @@ import hashlib
 import json
 import pathlib
 
-from .api import WordstatError, validate_phrase
+from .api import WordstatError, WordstatQuotaError, validate_phrase
 from .build import region_order, sheet_title
 from .config import select_phrases
+from . import fetch as fetch_mod
 from .fetch import slug
 
 COLUMNS = [
@@ -59,7 +60,7 @@ def fetch(cfg, client, run_date: dt.date | None = None, limit: int = 50,
         "limit": limit,
         "tag": tag,
         "phrases": list(phrases),
-        "planned": 0, "fetched": 0, "from_cache": 0, "errors": [],
+        "planned": 0, "fetched": 0, "from_cache": 0, "errors": [], "stopped_early": "",
     }
 
     plan = [
@@ -70,6 +71,7 @@ def fetch(cfg, client, run_date: dt.date | None = None, limit: int = 50,
     ]
     summary["planned"] = len(plan)
 
+    consecutive_errors = 0
     for index, (phrase, region, device) in enumerate(plan, 1):
         body = request_body(cfg, phrase, region.region_id, device, limit)
         path = directory / filename(body)
@@ -87,10 +89,22 @@ def fetch(cfg, client, run_date: dt.date | None = None, limit: int = 50,
             response = client.get_top(
                 phrase, regions=[region.region_id], devices=[device], num_phrases=limit
             )
+        except WordstatQuotaError as exc:
+            summary["stopped_early"] = f"квота исчерпана на {index}-м вызове из {len(plan)}"
+            log(f"  [{index}/{len(plan)}] КВОТА   {exc}")
+            break
         except (WordstatError, ValueError) as exc:
             summary["errors"].append({"call": label, "error": str(exc)})
             log(f"  [{index}/{len(plan)}] ОШИБКА  {label}: {exc}")
+            consecutive_errors += 1
+            if consecutive_errors >= fetch_mod.BREAKER_LIMIT:
+                summary["stopped_early"] = (
+                    f"{fetch_mod.BREAKER_LIMIT} неудачных вызовов подряд на {index}-м из {len(plan)}"
+                )
+                log("  Прогон остановлен: слишком много неудач подряд.")
+                break
             continue
+        consecutive_errors = 0
         path.write_text(
             json.dumps(
                 {

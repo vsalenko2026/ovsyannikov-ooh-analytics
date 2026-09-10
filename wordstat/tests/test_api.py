@@ -5,7 +5,8 @@ import unittest
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from tests.fake_api import FakeResponse, FakeSession, weekly_series
-from ws.api import WordstatClient, WordstatError, WordstatHTTPError, dynamics_rows, validate_phrase
+from ws.api import (WordstatClient, WordstatError, WordstatHTTPError, WordstatQuotaError,
+                    dynamics_rows, validate_phrase)
 
 
 def client(session, **kwargs):
@@ -38,19 +39,28 @@ class TestPhrase(unittest.TestCase):
 
 
 class TestRetries(unittest.TestCase):
-    def test_retries_on_429_then_succeeds(self):
+    def test_quota_is_terminal_and_not_retried(self):
+        # Лимит считается по календарному часу UTC и внутри часа не отпускает:
+        # повторы только жгут время прогона.
+        session = FakeSession([FakeResponse(429, text="wordstatRequestsPerHour")])
+        api = client(session)
+        with self.assertRaises(WordstatQuotaError):
+            api.get_dynamics("овсянников мыло", "2026-03-30T00:00:00Z", "2026-09-06T23:59:59Z",
+                             "PERIOD_WEEKLY", regions=["1"], devices=["DEVICE_ALL"])
+        self.assertEqual(api.stats["http_calls"], 1)
+        self.assertEqual(api.stats["retries"], 0)
+        self.assertEqual(api.stats["billable_calls"], 0)
+
+    def test_server_error_is_still_retried(self):
         session = FakeSession([
-            FakeResponse(429, text="too many"),
+            FakeResponse(503, text="unavailable"),
             FakeResponse(payload={"results": []}),
         ])
         api = client(session)
         api.get_dynamics("овсянников мыло", "2026-03-30T00:00:00Z", "2026-09-06T23:59:59Z",
                          "PERIOD_WEEKLY", regions=["1"], devices=["DEVICE_ALL"])
-        self.assertEqual(api.stats["http_calls"], 2)
         self.assertEqual(api.stats["retries"], 1)
-        # 429 не тарифицируется — платный только успешный вызов
         self.assertEqual(api.stats["billable_calls"], 1)
-        self.assertAlmostEqual(api.cost_rub, 0.02)
 
     def test_gives_up_after_max_attempts(self):
         session = FakeSession([FakeResponse(503, text="unavailable") for _ in range(3)])

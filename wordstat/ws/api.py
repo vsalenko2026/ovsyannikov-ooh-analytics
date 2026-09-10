@@ -23,7 +23,7 @@ import requests
 FORBIDDEN_PHRASE_CHARS = '!"«»[]()|'
 
 # Коды, по которым имеет смысл повторить вызов.
-RETRYABLE_STATUSES = {429, 500, 502, 503, 504}
+RETRYABLE_STATUSES = {500, 502, 503, 504}
 
 # Вызовы, завершившиеся внутренней ошибкой сервера или ошибкой авторизации,
 # не тарифицируются (ТЗ, п. 8). 429 — отказ до обработки, тоже не считаем.
@@ -32,6 +32,14 @@ NON_BILLABLE_STATUSES = {401, 403, 429, 500, 502, 503, 504}
 
 class WordstatError(RuntimeError):
     """Ошибка обращения к Wordstat API."""
+
+
+class WordstatQuotaError(WordstatError):
+    """Исчерпана часовая квота.
+
+    Лимит считается по календарному часу UTC и не отпускает раньше его
+    границы, поэтому повторы внутри часа только жгут время прогона.
+    """
 
 
 class WordstatHTTPError(WordstatError):
@@ -72,9 +80,9 @@ class WordstatClient:
         folder_id: str,
         base_url: str = "https://searchapi.api.cloud.yandex.net/v2/wordstat",
         pause_seconds: float = 0.3,
-        max_attempts: int = 5,
+        max_attempts: int = 3,
         backoff_base_seconds: float = 2.0,
-        backoff_cap_seconds: float = 60.0,
+        backoff_cap_seconds: float = 16.0,
         timeout_seconds: float = 30.0,
         price_per_call_rub: float = 0.02,
         session: requests.Session | None = None,
@@ -158,6 +166,9 @@ class WordstatClient:
                     return response.json()
                 except ValueError as exc:
                     raise WordstatError(f"{path}: ответ не JSON: {response.text[:300]}") from exc
+
+            if status == 429:
+                raise WordstatQuotaError(f"{path}: квота исчерпана — {response.text[:200]}")
 
             error = WordstatHTTPError(status, response.text, path)
             if status not in RETRYABLE_STATUSES or attempt == self.max_attempts:
