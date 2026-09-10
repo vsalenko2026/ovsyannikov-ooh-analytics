@@ -258,3 +258,17 @@ def select_phrases(cfg, only=None) -> tuple[str, ...]:
             ".\nЕсть: " + ", ".join(cfg.phrases)
         )
     return tuple(dict.fromkeys(chosen))
+
+
+def phrase_chunks(cfg, quota: int = 100) -> tuple[tuple[str, ...], ...]:
+    """Разбить фразы на группы, каждая из которых укладывается в часовую квоту.
+
+    Сервис считает 100 вызовов в календарный час UTC. Вызовов в группе —
+    фразы × регионы, поэтому размер группы определяется числом регионов.
+    """
+    calls_per_phrase = max(1, len(cfg.resolved_regions())) * max(1, len(cfg.devices))
+    per_chunk = max(1, quota // calls_per_phrase)
+    phrases = list(cfg.phrases)
+    return tuple(
+        tuple(phrases[i:i + per_chunk]) for i in range(0, len(phrases), per_chunk)
+    )

@@ -311,7 +311,24 @@ def cmd_top_export(cfg, args) -> int:
     return 0
 
 
+def cmd_chunks(cfg, args) -> int:
+    """Группы фраз под часовую квоту — на них опирается расписание."""
+    chunks = config_mod.phrase_chunks(cfg, args.quota)
+    calls = len(cfg.resolved_regions()) * len(cfg.devices)
+    if args.index:
+        if not 1 <= args.index <= len(chunks):
+            raise SystemExit(f"группы {args.index} нет: всего групп {len(chunks)}")
+        for phrase in chunks[args.index - 1]:
+            print(phrase)
+        return 0
+    for number, chunk in enumerate(chunks, 1):
+        print(f"группа {number}: {len(chunk) * calls} вызовов — " + ", ".join(chunk))
+    print(f"всего групп: {len(chunks)}, квота {args.quota} вызовов в час")
+    return 0
+
+
 COMMANDS = {
+    "chunks": cmd_chunks,
     "plan": cmd_plan,
     "regions.fetch-tree": cmd_regions_fetch_tree,
     "regions.resolve": cmd_regions_resolve,
@@ -343,6 +360,10 @@ def main(argv=None) -> int:
     p_resolve.add_argument("--tree", help="путь к сохранённому дереву")
 
     sub.add_parser("probe-regions", help="проверить, суммирует ли API несколько регионов")
+
+    p_chunks = sub.add_parser("chunks", help="разбивка фраз на группы под часовую квоту")
+    p_chunks.add_argument("--index", type=int, help="напечатать только фразы этой группы")
+    p_chunks.add_argument("--quota", type=int, default=100, help="вызовов в час, по умолчанию 100")
 
     p_fetch = sub.add_parser("fetch", help="выгрузить динамику")
     p_fetch.add_argument("--run-date", help="дата прогона (YYYY-MM-DD), по умолчанию сегодня")
