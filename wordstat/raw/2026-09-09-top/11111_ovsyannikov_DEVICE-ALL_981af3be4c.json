@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:43+00:00",
+    "region_name": "Республика Башкортостан",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "11111"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikov",
+        "count": "2"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "евгеника",
+        "count": "694"
+      },
+      {
+        "phrase": "пюник",
+        "count": "84"
+      },
+      {
+        "phrase": "irynakournikova",
+        "count": "5"
+      },
+      {
+        "phrase": "sh0tnik",
+        "count": "11"
+      },
+      {
+        "phrase": "aynikorgg",
+        "count": "1"
+      },
+      {
+        "phrase": "щаница",
+        "count": "1"
+      },
+      {
+        "phrase": "факеравтогрупп",
+        "count": "2"
+      },
+      {
+        "phrase": "юмнико",
+        "count": "2"
+      },
+      {
+        "phrase": "анастасян",
+        "count": "398"
+      },
+      {
+        "phrase": "korobeynikov",
+        "count": "1"
+      },
+      {
+        "phrase": "жконика",
+        "count": "3"
+      },
+      {
+        "phrase": "пшенников",
+        "count": "29"
+      },
+      {
+        "phrase": "яишницу",
+        "count": "26"
+      },
+      {
+        "phrase": "эуоника",
+        "count": "2"
+      }
+    ],
+    "totalCount": "2"
+  }
+}

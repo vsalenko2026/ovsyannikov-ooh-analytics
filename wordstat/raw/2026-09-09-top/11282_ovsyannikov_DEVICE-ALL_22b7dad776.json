@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T23:00:42+00:00",
+    "region_name": "Кемеровская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "11282"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikov",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "евгеника",
+        "count": "1062"
+      },
+      {
+        "phrase": "пюник",
+        "count": "49"
+      },
+      {
+        "phrase": "irynakournikova",
+        "count": "2"
+      },
+      {
+        "phrase": "sh0tnik",
+        "count": "2"
+      },
+      {
+        "phrase": "щаница",
+        "count": "2"
+      },
+      {
+        "phrase": "факеравтогрупп",
+        "count": "1"
+      },
+      {
+        "phrase": "юмнико",
+        "count": "2"
+      },
+      {
+        "phrase": "анастасян",
+        "count": "277"
+      },
+      {
+        "phrase": "ashniko",
+        "count": "2"
+      },
+      {
+        "phrase": "пшенников",
+        "count": "5"
+      },
+      {
+        "phrase": "яишницу",
+        "count": "17"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

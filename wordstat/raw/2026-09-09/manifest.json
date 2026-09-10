@@ -1,0 +1,29 @@
+{
+  "run_date": "2026-09-09",
+  "planned": 216,
+  "fetched": 18,
+  "from_cache": 198,
+  "errors": [],
+  "period": "PERIOD_WEEKLY",
+  "from_date": "2026-03-30",
+  "to_date": "2026-09-06",
+  "phrases": [
+    "овсянников мыло",
+    "овсянников косметика",
+    "овсянников купить",
+    "овсянников крем",
+    "овсянников сайт",
+    "овсянников образцы",
+    "овсянников тайный советник",
+    "ovsyannikovsoap",
+    "ovsyannikov"
+  ],
+  "devices": [
+    "DEVICE_ALL"
+  ],
+  "regions": 24,
+  "http_calls": 18,
+  "billable_calls": 18,
+  "retries": 0,
+  "cost_rub": 0.36
+}

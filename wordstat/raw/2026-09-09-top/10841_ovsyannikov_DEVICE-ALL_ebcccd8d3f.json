@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:47+00:00",
+    "region_name": "Ярославская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "10841"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {}
+}

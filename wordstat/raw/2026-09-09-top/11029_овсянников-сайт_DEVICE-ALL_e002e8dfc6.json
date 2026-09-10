@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:00:57+00:00",
+    "region_name": "Ростовская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "11029"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников сайт",
+        "count": "3"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "нфмо портал личный кабинет",
+        "count": "4"
+      },
+      {
+        "phrase": "ожнокласники ру моя страница",
+        "count": "7"
+      },
+      {
+        "phrase": "веб страница это",
+        "count": "86"
+      },
+      {
+        "phrase": "xhwebsite com",
+        "count": "23"
+      },
+      {
+        "phrase": "твоятерритория ру онлайн",
+        "count": "1"
+      },
+      {
+        "phrase": "https ya ruодноклассники моя страничка",
+        "count": "33"
+      },
+      {
+        "phrase": "веб портал",
+        "count": "37"
+      },
+      {
+        "phrase": "веб страница",
+        "count": "1175"
+      }
+    ],
+    "totalCount": "3"
+  }
+}

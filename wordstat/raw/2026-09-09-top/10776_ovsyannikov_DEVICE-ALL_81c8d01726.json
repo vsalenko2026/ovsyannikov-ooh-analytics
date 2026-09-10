@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:41+00:00",
+    "region_name": "Рязанская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "10776"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikov",
+        "count": "2"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "евгеника",
+        "count": "338"
+      },
+      {
+        "phrase": "пюник",
+        "count": "35"
+      },
+      {
+        "phrase": "irynakournikova",
+        "count": "14"
+      },
+      {
+        "phrase": "sh0tnik",
+        "count": "3"
+      },
+      {
+        "phrase": "щаница",
+        "count": "11"
+      },
+      {
+        "phrase": "анастасян",
+        "count": "198"
+      },
+      {
+        "phrase": "жконика",
+        "count": "3"
+      },
+      {
+        "phrase": "пшенников",
+        "count": "2322"
+      },
+      {
+        "phrase": "яишницу",
+        "count": "9"
+      }
+    ],
+    "totalCount": "2"
+  }
+}

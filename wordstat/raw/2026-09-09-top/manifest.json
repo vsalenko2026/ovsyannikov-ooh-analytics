@@ -1,0 +1,23 @@
+{
+  "run_date": "2026-09-09",
+  "method": "GetTop",
+  "limit": 50,
+  "tag": "",
+  "phrases": [
+    "овсянников мыло",
+    "овсянников косметика",
+    "овсянников купить",
+    "овсянников крем",
+    "овсянников сайт",
+    "овсянников тайный советник",
+    "ovsyannikovsoap",
+    "ovsyannikov"
+  ],
+  "planned": 192,
+  "fetched": 2,
+  "from_cache": 190,
+  "errors": [],
+  "http_calls": 2,
+  "billable_calls": 2,
+  "cost_rub": 0.04
+}

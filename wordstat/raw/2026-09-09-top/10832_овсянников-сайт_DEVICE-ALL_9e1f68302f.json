@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:00:59+00:00",
+    "region_name": "Тульская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "10832"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников сайт",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "безкомплексов ру моя страница",
+        "count": "2"
+      },
+      {
+        "phrase": "нфмо портал личный кабинет",
+        "count": "3"
+      },
+      {
+        "phrase": "веб страница это",
+        "count": "38"
+      },
+      {
+        "phrase": "xhwebsite com",
+        "count": "5"
+      },
+      {
+        "phrase": "https ya ruодноклассники моя страничка",
+        "count": "2"
+      },
+      {
+        "phrase": "веб портал",
+        "count": "9"
+      },
+      {
+        "phrase": "веб страница",
+        "count": "333"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

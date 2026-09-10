@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:01+00:00",
+    "region_name": "Пензенская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "11095"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников сайт",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "нфмо портал личный кабинет",
+        "count": "4"
+      },
+      {
+        "phrase": "ожнокласники ру моя страница",
+        "count": "1"
+      },
+      {
+        "phrase": "веб страница это",
+        "count": "13"
+      },
+      {
+        "phrase": "веб портал",
+        "count": "8"
+      },
+      {
+        "phrase": "веб страница",
+        "count": "264"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

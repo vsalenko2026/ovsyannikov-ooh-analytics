@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:28+00:00",
+    "region_name": "Томская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikovsoap",
+    "regions": [
+      "11353"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikovsoap",
+        "count": "1"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "давай со мной за звездами",
+        "count": "91"
+      },
+      {
+        "phrase": "пассия это",
+        "count": "52"
+      },
+      {
+        "phrase": "овсиенко",
+        "count": "513"
+      },
+      {
+        "phrase": "никах это",
+        "count": "223"
+      },
+      {
+        "phrase": "анчоусы что это такое",
+        "count": "12"
+      },
+      {
+        "phrase": "единственная моя",
+        "count": "371"
+      },
+      {
+        "phrase": "упячка",
+        "count": "11"
+      },
+      {
+        "phrase": "анчутка",
+        "count": "23"
+      },
+      {
+        "phrase": "никах что это",
+        "count": "59"
+      },
+      {
+        "phrase": "кукрыниксы это",
+        "count": "23"
+      },
+      {
+        "phrase": "мацерация это",
+        "count": "12"
+      },
+      {
+        "phrase": "власяница",
+        "count": "22"
+      },
+      {
+        "phrase": "мильковский",
+        "count": "156"
+      },
+      {
+        "phrase": "армяк",
+        "count": "19"
+      },
+      {
+        "phrase": "а вы не лезьте в мою душу",
+        "count": "48"
+      },
+      {
+        "phrase": "anikv",
+        "count": "37"
+      },
+      {
+        "phrase": "мия бойко все лучшее для меня",
+        "count": "7"
+      },
+      {
+        "phrase": "новосолошино",
+        "count": "11"
+      },
+      {
+        "phrase": "зиньковский",
+        "count": "29"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

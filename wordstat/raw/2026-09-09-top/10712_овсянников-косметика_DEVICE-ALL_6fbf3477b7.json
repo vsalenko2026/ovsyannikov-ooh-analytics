@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T21:01:13+00:00",
+    "region_name": "Липецкая область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников косметика",
+    "regions": [
+      "10712"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников косметика",
+        "count": "4"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "kosmetista",
+        "count": "44"
+      },
+      {
+        "phrase": "эксфолиант что это",
+        "count": "2"
+      },
+      {
+        "phrase": "эксфолиант это",
+        "count": "2"
+      },
+      {
+        "phrase": "косметическое масло",
+        "count": "100"
+      },
+      {
+        "phrase": "что нужно для макияжа лица",
+        "count": "46"
+      },
+      {
+        "phrase": "чем отмыть тональный крем с одежды",
+        "count": "2"
+      },
+      {
+        "phrase": "kisy cosmetics",
+        "count": "2"
+      },
+      {
+        "phrase": "эксфолиант что это такое",
+        "count": "2"
+      },
+      {
+        "phrase": "машнит косметикс",
+        "count": "1"
+      },
+      {
+        "phrase": "средства для ухода за лицом",
+        "count": "89"
+      },
+      {
+        "phrase": "косметические средства",
+        "count": "188"
+      },
+      {
+        "phrase": "тональное средство",
+        "count": "60"
+      },
+      {
+        "phrase": "косметическая основа",
+        "count": "4"
+      }
+    ],
+    "totalCount": "4"
+  }
+}

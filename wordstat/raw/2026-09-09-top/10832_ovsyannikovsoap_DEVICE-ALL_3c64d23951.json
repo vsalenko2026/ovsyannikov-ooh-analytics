@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:34+00:00",
+    "region_name": "Тульская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "ovsyannikovsoap",
+    "regions": [
+      "10832"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikovsoap",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "давай со мной за звездами",
+        "count": "149"
+      },
+      {
+        "phrase": "пассия это",
+        "count": "53"
+      },
+      {
+        "phrase": "овсиенко",
+        "count": "1077"
+      },
+      {
+        "phrase": "никах это",
+        "count": "364"
+      },
+      {
+        "phrase": "анчоусы что это такое",
+        "count": "47"
+      },
+      {
+        "phrase": "единственная моя",
+        "count": "1140"
+      },
+      {
+        "phrase": "упячка",
+        "count": "24"
+      },
+      {
+        "phrase": "анчутка",
+        "count": "78"
+      },
+      {
+        "phrase": "никах что это",
+        "count": "98"
+      },
+      {
+        "phrase": "кукрыниксы это",
+        "count": "54"
+      },
+      {
+        "phrase": "мацерация это",
+        "count": "21"
+      },
+      {
+        "phrase": "власяница",
+        "count": "45"
+      },
+      {
+        "phrase": "мильковский",
+        "count": "401"
+      },
+      {
+        "phrase": "армяк",
+        "count": "33"
+      },
+      {
+        "phrase": "а вы не лезьте в мою душу",
+        "count": "63"
+      },
+      {
+        "phrase": "anikv",
+        "count": "56"
+      },
+      {
+        "phrase": "мия бойко все лучшее для меня",
+        "count": "25"
+      },
+      {
+        "phrase": "новосолошино",
+        "count": "45"
+      },
+      {
+        "phrase": "зиньковский",
+        "count": "74"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

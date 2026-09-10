@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:30+00:00",
+    "region_name": "Омская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikovsoap",
+    "regions": [
+      "11318"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikovsoap",
+        "count": "3"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru",
+        "count": "3"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru мыло",
+        "count": "2"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "давай со мной за звездами",
+        "count": "200"
+      },
+      {
+        "phrase": "пассия это",
+        "count": "50"
+      },
+      {
+        "phrase": "овсиенко",
+        "count": "1000"
+      },
+      {
+        "phrase": "никах это",
+        "count": "572"
+      },
+      {
+        "phrase": "анчоусы что это такое",
+        "count": "28"
+      },
+      {
+        "phrase": "единственная моя",
+        "count": "945"
+      },
+      {
+        "phrase": "упячка",
+        "count": "29"
+      },
+      {
+        "phrase": "анчутка",
+        "count": "41"
+      },
+      {
+        "phrase": "никах что это",
+        "count": "166"
+      },
+      {
+        "phrase": "кукрыниксы это",
+        "count": "55"
+      },
+      {
+        "phrase": "мацерация это",
+        "count": "40"
+      },
+      {
+        "phrase": "власяница",
+        "count": "33"
+      },
+      {
+        "phrase": "мильковский",
+        "count": "416"
+      },
+      {
+        "phrase": "армяк",
+        "count": "32"
+      },
+      {
+        "phrase": "а вы не лезьте в мою душу",
+        "count": "86"
+      },
+      {
+        "phrase": "anikv",
+        "count": "55"
+      },
+      {
+        "phrase": "мия бойко все лучшее для меня",
+        "count": "41"
+      },
+      {
+        "phrase": "новосолошино",
+        "count": "29"
+      },
+      {
+        "phrase": "зиньковский",
+        "count": "12"
+      }
+    ],
+    "totalCount": "3"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:33+00:00",
+    "region_name": "Астраханская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "ovsyannikovsoap",
+    "regions": [
+      "10946"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {}
+}

@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:50+00:00",
+    "region_name": "Ростовская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "11029"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikov",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "евгеника",
+        "count": "1676"
+      },
+      {
+        "phrase": "пюник",
+        "count": "171"
+      },
+      {
+        "phrase": "irynakournikova",
+        "count": "8"
+      },
+      {
+        "phrase": "sh0tnik",
+        "count": "13"
+      },
+      {
+        "phrase": "aynikorgg",
+        "count": "10"
+      },
+      {
+        "phrase": "щаница",
+        "count": "7"
+      },
+      {
+        "phrase": "факеравтогрупп",
+        "count": "1"
+      },
+      {
+        "phrase": "юмнико",
+        "count": "3"
+      },
+      {
+        "phrase": "анастасян",
+        "count": "538"
+      },
+      {
+        "phrase": "korobeynikov",
+        "count": "4"
+      },
+      {
+        "phrase": "жконика",
+        "count": "8"
+      },
+      {
+        "phrase": "пшенников",
+        "count": "62"
+      },
+      {
+        "phrase": "яишницу",
+        "count": "60"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

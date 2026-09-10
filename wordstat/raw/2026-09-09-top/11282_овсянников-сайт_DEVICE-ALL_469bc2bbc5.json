@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:02+00:00",
+    "region_name": "Кемеровская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "11282"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников сайт",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "екту портал",
+        "count": "5"
+      },
+      {
+        "phrase": "нфмо портал личный кабинет",
+        "count": "7"
+      },
+      {
+        "phrase": "ожнокласники ру моя страница",
+        "count": "8"
+      },
+      {
+        "phrase": "веб страница это",
+        "count": "61"
+      },
+      {
+        "phrase": "xhwebsite com",
+        "count": "2"
+      },
+      {
+        "phrase": "твоятерритория ру онлайн",
+        "count": "2"
+      },
+      {
+        "phrase": "https ya ruодноклассники моя страничка",
+        "count": "16"
+      },
+      {
+        "phrase": "веб портал",
+        "count": "17"
+      },
+      {
+        "phrase": "веб страница",
+        "count": "848"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

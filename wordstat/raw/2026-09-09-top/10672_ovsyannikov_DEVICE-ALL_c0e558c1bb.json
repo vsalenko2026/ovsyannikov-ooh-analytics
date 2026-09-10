@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-09T22:01:39+00:00",
+    "region_name": "Воронежская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "10672"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikov",
+        "count": "3"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "евгеника",
+        "count": "834"
+      },
+      {
+        "phrase": "пюник",
+        "count": "97"
+      },
+      {
+        "phrase": "sh0tnik",
+        "count": "14"
+      },
+      {
+        "phrase": "aynikorgg",
+        "count": "8"
+      },
+      {
+        "phrase": "щаница",
+        "count": "14"
+      },
+      {
+        "phrase": "факеравтогрупп",
+        "count": "1"
+      },
+      {
+        "phrase": "анастасян",
+        "count": "221"
+      },
+      {
+        "phrase": "жконика",
+        "count": "3"
+      },
+      {
+        "phrase": "ashniko",
+        "count": "6"
+      },
+      {
+        "phrase": "пшенников",
+        "count": "39"
+      },
+      {
+        "phrase": "яишницу",
+        "count": "35"
+      }
+    ],
+    "totalCount": "3"
+  }
+}

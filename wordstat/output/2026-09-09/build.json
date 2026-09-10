@@ -1,0 +1,12 @@
+{
+  "raw_dir": "/home/user/ovsyannikov-ooh-analytics/wordstat/raw/2026-09-09",
+  "rows": 4416,
+  "period": "PERIOD_WEEKLY",
+  "week_anchor": "start",
+  "weeks": 23,
+  "regions": 24,
+  "phrases": 8,
+  "partial_weeks": [],
+  "long_csv": "/home/user/ovsyannikov-ooh-analytics/wordstat/output/2026-09-09/wordstat_long.csv",
+  "wide_xlsx": "/home/user/ovsyannikov-ooh-analytics/wordstat/output/2026-09-09/wordstat_wide.xlsx"
+}
