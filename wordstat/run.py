@@ -194,7 +194,7 @@ def cmd_fetch(cfg, args) -> int:
     require_resolved(cfg)
     run_date = periods.parse_date(args.run_date) if args.run_date else dt.date.today()
     warn_daily_depth(cfg, run_date)
-    plan = fetch_mod.build_plan(cfg, run_date)
+    plan = fetch_mod.build_plan(cfg, run_date, only=args.only)
     if args.dry_run:
         for call in plan:
             print(f"  {call.describe()} · {call.from_date} … {call.to_date}")
@@ -204,7 +204,7 @@ def cmd_fetch(cfg, args) -> int:
 
     client = make_client(cfg)
     print(f"прогон {run_date}: {len(plan)} вызовов, каталог {fetch_mod.run_dir(cfg, run_date)}")
-    summary = fetch_mod.fetch(cfg, client, run_date=run_date)
+    summary = fetch_mod.fetch(cfg, client, run_date=run_date, only=args.only)
     print("\nитог прогона")
     print(f"  запланировано вызовов : {summary['planned']}")
     print(f"  выгружено             : {summary['fetched']}")
@@ -290,7 +290,7 @@ def cmd_top_export(cfg, args) -> int:
 
     if not args.build_only:
         client = make_client(cfg)
-        phrases = top_mod.select_phrases(cfg, args.only)
+        phrases = config_mod.select_phrases(cfg, args.only)
         planned = len(phrases) * len(cfg.resolved_regions()) * len(cfg.devices)
         print(f"снимок топа {run_date}: {len(phrases)} фраз × "
               f"{len(cfg.resolved_regions())} регионов = {planned} вызовов, "
@@ -348,6 +348,9 @@ def main(argv=None) -> int:
     p_fetch.add_argument("--run-date", help="дата прогона (YYYY-MM-DD), по умолчанию сегодня")
     p_fetch.add_argument("--dry-run", action="store_true", help="показать план, не вызывая API")
     p_fetch.add_argument("--period", choices=periods.PERIODS, help=period_help)
+    p_fetch.add_argument("--only", action="append", metavar="ФРАЗА",
+                         help="взять только эти фразы; можно повторять. "
+                              "Квота — 100 вызовов в час UTC, прогон удобно дробить")
 
     p_build = sub.add_parser("build", help="собрать CSV и XLSX из сырых ответов")
     p_build.add_argument("--raw", help="каталог прогона, по умолчанию последний")

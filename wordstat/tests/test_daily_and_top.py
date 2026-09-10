@@ -12,6 +12,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from tests.fake_api import FakeSession, dispatch
 from tests.test_pipeline import PipelineCase
 from ws import build as build_mod
+from ws import config as config_mod
 from ws import fetch as fetch_mod
 from ws import periods
 from ws import top as top_mod
@@ -131,18 +132,18 @@ if __name__ == "__main__":
 class TestTopSubset(DailyCase):
     def test_only_filters_phrases(self):
         self.assertEqual(
-            top_mod.select_phrases(self.cfg, ["овсянников мыло"]), ("овсянников мыло",)
+            config_mod.select_phrases(self.cfg, ["овсянников мыло"]), ("овсянников мыло",)
         )
 
     def test_only_is_case_insensitive_and_deduplicated(self):
         self.assertEqual(
-            top_mod.select_phrases(self.cfg, ["Овсянников Мыло", "овсянников мыло"]),
+            config_mod.select_phrases(self.cfg, ["Овсянников Мыло", "овсянников мыло"]),
             ("овсянников мыло",),
         )
 
     def test_unknown_phrase_is_an_error(self):
         with self.assertRaises(SystemExit):
-            top_mod.select_phrases(self.cfg, ["овсянников отзывы"])
+            config_mod.select_phrases(self.cfg, ["овсянников отзывы"])
 
     def test_tag_gives_its_own_run_dir(self):
         run = dt.date(2026, 9, 9)
@@ -162,3 +163,21 @@ class TestTopSubset(DailyCase):
         from openpyxl import load_workbook
         book = load_workbook(out / "wordstat_top.xlsx")
         self.assertEqual(len(book.sheetnames), 2)        # вложенные + ассоциации
+
+
+class TestFetchSubset(DailyCase):
+    def test_only_narrows_the_plan(self):
+        # квота — 100 вызовов в час UTC, прогон дробится по фразам
+        full = fetch_mod.build_plan(self.cfg, dt.date(2026, 9, 9))
+        part = fetch_mod.build_plan(self.cfg, dt.date(2026, 9, 9), only=["овсянников мыло"])
+        self.assertEqual(len(full), 6)
+        self.assertEqual(len(part), 3)
+        self.assertEqual({c.phrase for c in part}, {"овсянников мыло"})
+
+    def test_parts_together_cover_the_whole(self):
+        pairs = set()
+        for phrase in self.cfg.phrases:
+            pairs |= {(c.phrase, c.region_id) for c in
+                      fetch_mod.build_plan(self.cfg, dt.date(2026, 9, 9), only=[phrase])}
+        whole = {(c.phrase, c.region_id) for c in fetch_mod.build_plan(self.cfg, dt.date(2026, 9, 9))}
+        self.assertEqual(pairs, whole)

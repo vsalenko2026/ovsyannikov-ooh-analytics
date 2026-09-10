@@ -15,6 +15,7 @@ import pathlib
 
 from .api import WordstatError, validate_phrase
 from .build import region_order, sheet_title
+from .config import select_phrases
 from .fetch import slug
 
 COLUMNS = [
@@ -32,21 +33,6 @@ def run_dir(cfg, run_date: dt.date, tag: str = "") -> pathlib.Path:
     return cfg.raw_dir / run_name(run_date, tag)
 
 
-def select_phrases(cfg, only=None) -> tuple[str, ...]:
-    """Подмножество фраз из конфига. Опечатка в названии — ошибка, не тишина."""
-    if not only:
-        return tuple(cfg.phrases)
-    known = {p.casefold(): p for p in cfg.phrases}
-    chosen, unknown = [], []
-    for name in only:
-        key = str(name).strip().casefold()
-        (chosen.append(known[key]) if key in known else unknown.append(name))
-    if unknown:
-        raise SystemExit(
-            "нет таких фраз в config.yaml: " + ", ".join(map(str, unknown)) +
-            ".\nЕсть: " + ", ".join(cfg.phrases)
-        )
-    return tuple(dict.fromkeys(chosen))
 
 
 def request_body(cfg, phrase: str, region_id: str, device: str, limit: int) -> dict:

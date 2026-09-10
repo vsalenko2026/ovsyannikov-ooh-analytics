@@ -15,12 +15,15 @@ import re
 
 from . import periods
 from .api import WordstatError
+from .config import select_phrases
 
 SLUG_RE = re.compile(r"[^0-9A-Za-zА-Яа-яЁё]+")
 
 
 def slug(text: str, limit: int = 40) -> str:
     return SLUG_RE.sub("-", str(text)).strip("-")[:limit] or "x"
+
+
 
 
 @dataclasses.dataclass(frozen=True)
@@ -57,15 +60,19 @@ class Call:
         return f"{self.region_name} · {self.phrase} · {self.device}"
 
 
-def build_plan(cfg, today: dt.date | None = None) -> list[Call]:
-    """Перечень вызовов. По одному региону на вызов — см. README, «Один регион на вызов»."""
+def build_plan(cfg, today: dt.date | None = None, only=None) -> list[Call]:
+    """Перечень вызовов. По одному региону на вызов — см. README, «Один регион на вызов».
+
+    `only` сужает набор фраз: квота сервиса — 100 вызовов в календарный час
+    UTC, и прогон удобно дробить так, чтобы каждая часть укладывалась в окно.
+    """
     today = today or dt.date.today()
     from_date, _clamped = cfg.effective_start_date(today)
     to_date = cfg.effective_end_date(today)
     if to_date <= from_date:
         raise SystemExit(f"пустой период: {from_date} … {to_date}")
     plan = []
-    for phrase in cfg.phrases:
+    for phrase in select_phrases(cfg, only):
         for region in cfg.resolved_regions():
             for device in cfg.devices:
                 plan.append(
@@ -128,10 +135,10 @@ def save(path: pathlib.Path, call: Call, response: dict, attempts: int) -> None:
     tmp.replace(path)
 
 
-def fetch(cfg, client, run_date: dt.date | None = None, log=print) -> dict:
+def fetch(cfg, client, run_date: dt.date | None = None, only=None, log=print) -> dict:
     """Прогон. Перезапускаемый: уже полученное из кэша не перевыгружается."""
     run_date = run_date or dt.date.today()
-    plan = build_plan(cfg, run_date)
+    plan = build_plan(cfg, run_date, only=only)
     directory = run_dir(cfg, run_date)
     directory.mkdir(parents=True, exist_ok=True)
 

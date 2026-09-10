@@ -237,3 +237,24 @@ def load(path: pathlib.Path | str = DEFAULT_CONFIG) -> Config:
         regions_meta=regions_meta,
         regions=regions,
     )
+
+
+def select_phrases(cfg, only=None) -> tuple[str, ...]:
+    """Подмножество фраз из конфига. Опечатка в названии — ошибка, не тишина.
+
+    Нужно, чтобы дробить прогон под часовую квоту сервиса и чтобы снимать
+    углублённый топ по ядру метрики отдельно от общего снимка.
+    """
+    if not only:
+        return tuple(cfg.phrases)
+    known = {p.casefold(): p for p in cfg.phrases}
+    chosen, unknown = [], []
+    for name in only:
+        key = str(name).strip().casefold()
+        (chosen.append(known[key]) if key in known else unknown.append(name))
+    if unknown:
+        raise SystemExit(
+            "нет таких фраз в config.yaml: " + ", ".join(map(str, unknown)) +
+            ".\nЕсть: " + ", ".join(cfg.phrases)
+        )
+    return tuple(dict.fromkeys(chosen))
