@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T23:03:37+00:00",
+    "region_name": "Алтайский край",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников косметика",
+    "regions": [
+      "11235"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 200
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников косметика",
+        "count": "6"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "kosmetista",
+        "count": "1"
+      },
+      {
+        "phrase": "эксфолиант что это",
+        "count": "4"
+      },
+      {
+        "phrase": "эксфолиант это",
+        "count": "9"
+      },
+      {
+        "phrase": "для чего нужен лосьон для лица",
+        "count": "1"
+      },
+      {
+        "phrase": "косметическое масло",
+        "count": "225"
+      },
+      {
+        "phrase": "что нужно для макияжа лица",
+        "count": "34"
+      },
+      {
+        "phrase": "эксфолиант что это такое",
+        "count": "1"
+      },
+      {
+        "phrase": "машнит косметикс",
+        "count": "2"
+      },
+      {
+        "phrase": "средства для ухода за лицом",
+        "count": "78"
+      },
+      {
+        "phrase": "косметические средства",
+        "count": "246"
+      },
+      {
+        "phrase": "aya cosmetics",
+        "count": "2"
+      },
+      {
+        "phrase": "тональное средство",
+        "count": "122"
+      },
+      {
+        "phrase": "что такое лосьон для лица",
+        "count": "2"
+      },
+      {
+        "phrase": "косметическая основа",
+        "count": "21"
+      }
+    ],
+    "totalCount": "6"
+  }
+}
