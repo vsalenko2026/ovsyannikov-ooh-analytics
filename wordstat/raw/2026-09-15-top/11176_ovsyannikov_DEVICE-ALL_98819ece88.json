@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:03:57+00:00",
+    "region_name": "Тюменская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "11176"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikov",
+        "count": "3"
+      },
+      {
+        "phrase": "ovsyannikov soap",
+        "count": "2"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "евгеника",
+        "count": "486"
+      },
+      {
+        "phrase": "пюник",
+        "count": "84"
+      },
+      {
+        "phrase": "irynakournikova",
+        "count": "9"
+      },
+      {
+        "phrase": "sh0tnik",
+        "count": "11"
+      },
+      {
+        "phrase": "щаница",
+        "count": "1"
+      },
+      {
+        "phrase": "юмнико",
+        "count": "5"
+      },
+      {
+        "phrase": "анастасян",
+        "count": "260"
+      },
+      {
+        "phrase": "жконика",
+        "count": "1"
+      },
+      {
+        "phrase": "пшенников",
+        "count": "14"
+      },
+      {
+        "phrase": "яишницу",
+        "count": "17"
+      }
+    ],
+    "totalCount": "3"
+  }
+}

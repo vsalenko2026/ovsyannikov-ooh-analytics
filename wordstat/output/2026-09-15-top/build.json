@@ -1,9 +1,9 @@
 {
   "raw_dir": "/home/user/ovsyannikov-ooh-analytics/wordstat/raw/2026-09-15-top",
-  "rows": 1144,
-  "nested": 240,
-  "associations": 904,
-  "phrases": 4,
+  "rows": 1749,
+  "nested": 351,
+  "associations": 1398,
+  "phrases": 8,
   "regions": 23,
   "top_csv": "/home/user/ovsyannikov-ooh-analytics/wordstat/output/2026-09-15-top/wordstat_top.csv",
   "top_xlsx": "/home/user/ovsyannikov-ooh-analytics/wordstat/output/2026-09-15-top/wordstat_top.xlsx"

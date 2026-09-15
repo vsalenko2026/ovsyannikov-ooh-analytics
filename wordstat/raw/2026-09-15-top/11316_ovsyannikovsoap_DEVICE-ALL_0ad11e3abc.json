@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:03:47+00:00",
+    "region_name": "Новосибирская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikovsoap",
+    "regions": [
+      "11316"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikovsoap",
+        "count": "5"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru",
+        "count": "5"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru крем",
+        "count": "5"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru мыло",
+        "count": "5"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru мыло крем",
+        "count": "5"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "давай со мной за звездами",
+        "count": "310"
+      },
+      {
+        "phrase": "пассия это",
+        "count": "150"
+      },
+      {
+        "phrase": "овсиенко",
+        "count": "1796"
+      },
+      {
+        "phrase": "никах это",
+        "count": "944"
+      },
+      {
+        "phrase": "анчоусы что это такое",
+        "count": "81"
+      },
+      {
+        "phrase": "единственная моя",
+        "count": "1814"
+      },
+      {
+        "phrase": "упячка",
+        "count": "48"
+      },
+      {
+        "phrase": "анчутка",
+        "count": "113"
+      },
+      {
+        "phrase": "никах что это",
+        "count": "253"
+      },
+      {
+        "phrase": "кукрыниксы это",
+        "count": "95"
+      },
+      {
+        "phrase": "мацерация это",
+        "count": "54"
+      },
+      {
+        "phrase": "власяница",
+        "count": "134"
+      },
+      {
+        "phrase": "мильковский",
+        "count": "711"
+      },
+      {
+        "phrase": "армяк",
+        "count": "56"
+      },
+      {
+        "phrase": "а вы не лезьте в мою душу",
+        "count": "165"
+      },
+      {
+        "phrase": "anikv",
+        "count": "74"
+      },
+      {
+        "phrase": "мия бойко все лучшее для меня",
+        "count": "55"
+      },
+      {
+        "phrase": "новосолошино",
+        "count": "66"
+      },
+      {
+        "phrase": "зиньковский",
+        "count": "70"
+      }
+    ],
+    "totalCount": "5"
+  }
+}

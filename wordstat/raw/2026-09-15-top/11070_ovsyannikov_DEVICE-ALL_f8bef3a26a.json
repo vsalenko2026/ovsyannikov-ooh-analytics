@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:04:12+00:00",
+    "region_name": "Кировская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "11070"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikov",
+        "count": "2"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "евгеника",
+        "count": "431"
+      },
+      {
+        "phrase": "пюник",
+        "count": "58"
+      },
+      {
+        "phrase": "irynakournikova",
+        "count": "3"
+      },
+      {
+        "phrase": "sh0tnik",
+        "count": "1"
+      },
+      {
+        "phrase": "aynikorgg",
+        "count": "1"
+      },
+      {
+        "phrase": "щаница",
+        "count": "2"
+      },
+      {
+        "phrase": "анастасян",
+        "count": "336"
+      },
+      {
+        "phrase": "пшенников",
+        "count": "9"
+      },
+      {
+        "phrase": "яишницу",
+        "count": "7"
+      }
+    ],
+    "totalCount": "2"
+  }
+}

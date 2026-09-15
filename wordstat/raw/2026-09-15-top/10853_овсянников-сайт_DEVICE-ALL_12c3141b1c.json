@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:03:14+00:00",
+    "region_name": "Вологодская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "10853"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников косметика официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "овсянников официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "сайт овсянникова",
+        "count": "2"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "биодерма официальный сайт",
+        "count": "7"
+      },
+      {
+        "phrase": "фармакосметика официальный сайт",
+        "count": "23"
+      },
+      {
+        "phrase": "mesomatrix официальный сайт",
+        "count": "8"
+      },
+      {
+        "phrase": "icon skin официальный сайт",
+        "count": "3"
+      },
+      {
+        "phrase": "limba cosmetics официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "фитокосметик официальный сайт",
+        "count": "4"
+      },
+      {
+        "phrase": "bioderma официальный сайт",
+        "count": "5"
+      },
+      {
+        "phrase": "nikk mole официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "veritate cosmetics официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "арнокосметик официальный сайт",
+        "count": "3"
+      },
+      {
+        "phrase": "плеяна косметика официальный",
+        "count": "2"
+      },
+      {
+        "phrase": "сиберика косметика официальный интернет магазин",
+        "count": "1"
+      }
+    ],
+    "totalCount": "2"
+  }
+}

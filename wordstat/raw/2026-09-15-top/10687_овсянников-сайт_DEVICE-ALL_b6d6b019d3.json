@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:03:16+00:00",
+    "region_name": "Ивановская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "10687"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {}
+}

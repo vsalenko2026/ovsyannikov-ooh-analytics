@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:04:05+00:00",
+    "region_name": "Новосибирская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "11316"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikov",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "евгеника",
+        "count": "1094"
+      },
+      {
+        "phrase": "пюник",
+        "count": "122"
+      },
+      {
+        "phrase": "irynakournikova",
+        "count": "39"
+      },
+      {
+        "phrase": "sh0tnik",
+        "count": "4"
+      },
+      {
+        "phrase": "щаница",
+        "count": "13"
+      },
+      {
+        "phrase": "юмнико",
+        "count": "4"
+      },
+      {
+        "phrase": "анастасян",
+        "count": "594"
+      },
+      {
+        "phrase": "korobeynikov",
+        "count": "13"
+      },
+      {
+        "phrase": "жконика",
+        "count": "4"
+      },
+      {
+        "phrase": "пшенников",
+        "count": "70"
+      },
+      {
+        "phrase": "яишницу",
+        "count": "32"
+      },
+      {
+        "phrase": "эуоника",
+        "count": "6"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

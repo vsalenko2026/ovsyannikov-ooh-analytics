@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:04:11+00:00",
+    "region_name": "Астраханская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "10946"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {}
+}

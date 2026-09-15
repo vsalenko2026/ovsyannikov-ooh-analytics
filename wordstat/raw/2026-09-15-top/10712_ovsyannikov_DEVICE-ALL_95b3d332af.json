@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:04:03+00:00",
+    "region_name": "Липецкая область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "10712"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "ovsyannikov",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "евгеника",
+        "count": "357"
+      },
+      {
+        "phrase": "пюник",
+        "count": "41"
+      },
+      {
+        "phrase": "irynakournikova",
+        "count": "8"
+      },
+      {
+        "phrase": "sh0tnik",
+        "count": "2"
+      },
+      {
+        "phrase": "щаница",
+        "count": "2"
+      },
+      {
+        "phrase": "юмнико",
+        "count": "2"
+      },
+      {
+        "phrase": "анастасян",
+        "count": "348"
+      },
+      {
+        "phrase": "korobeynikov",
+        "count": "3"
+      },
+      {
+        "phrase": "жконика",
+        "count": "3"
+      },
+      {
+        "phrase": "пшенников",
+        "count": "22"
+      },
+      {
+        "phrase": "яишницу",
+        "count": "13"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

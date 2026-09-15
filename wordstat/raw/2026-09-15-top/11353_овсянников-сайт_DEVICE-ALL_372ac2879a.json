@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:03:13+00:00",
+    "region_name": "Томская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "11353"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников косметика официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "овсянников официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "сайт овсянникова",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "биодерма официальный сайт",
+        "count": "22"
+      },
+      {
+        "phrase": "icon skin официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "limba cosmetics официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "фитокосметик официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "bioderma официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "плеяна косметика официальный",
+        "count": "4"
+      },
+      {
+        "phrase": "янссен косметикс официальный сайт",
+        "count": "8"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

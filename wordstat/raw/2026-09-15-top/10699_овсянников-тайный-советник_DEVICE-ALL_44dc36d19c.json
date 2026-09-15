@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:03:27+00:00",
+    "region_name": "Костромская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников тайный советник",
+    "regions": [
+      "10699"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников тайный советник",
+        "count": "3"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "секретное досье",
+        "count": "27"
+      },
+      {
+        "phrase": "помощник следователя",
+        "count": "7"
+      },
+      {
+        "phrase": "елизавета значение",
+        "count": "26"
+      },
+      {
+        "phrase": "секта скопцов",
+        "count": "6"
+      },
+      {
+        "phrase": "офицер особого назначения аудиокнига слушать",
+        "count": "2"
+      }
+    ],
+    "totalCount": "3"
+  }
+}

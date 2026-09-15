@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:03:17+00:00",
+    "region_name": "Ростовская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "11029"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "сайт овсянникова",
+        "count": "3"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "эсф портал",
+        "count": "1"
+      },
+      {
+        "phrase": "портал улгу",
+        "count": "28"
+      },
+      {
+        "phrase": "адноклассника ру моя страница",
+        "count": "34"
+      },
+      {
+        "phrase": "безкомплексов ру моя страница",
+        "count": "4"
+      },
+      {
+        "phrase": "портал мыюа",
+        "count": "4"
+      },
+      {
+        "phrase": "нфмо портал личный кабинет",
+        "count": "6"
+      },
+      {
+        "phrase": "ожнокласники ру моя страница",
+        "count": "7"
+      },
+      {
+        "phrase": "веб страница это",
+        "count": "490"
+      },
+      {
+        "phrase": "xhwebsite com",
+        "count": "23"
+      },
+      {
+        "phrase": "твоятерритория ру онлайн",
+        "count": "1"
+      },
+      {
+        "phrase": "https ya ruодноклассники моя страничка",
+        "count": "36"
+      },
+      {
+        "phrase": "веб портал",
+        "count": "259"
+      }
+    ],
+    "totalCount": "3"
+  }
+}

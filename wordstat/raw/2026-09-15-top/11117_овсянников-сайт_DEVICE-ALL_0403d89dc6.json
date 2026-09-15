@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T22:03:07+00:00",
+    "region_name": "Республика Мордовия",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "11117"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников косметика официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "овсянников официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "сайт овсянникова",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "биодерма официальный сайт",
+        "count": "5"
+      },
+      {
+        "phrase": "mesomatrix официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "icon skin официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "limba cosmetics официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "фитокосметик официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "bioderma официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "арнокосметик официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "созвездие красоты интернет магазин официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "плеяна косметика официальный",
+        "count": "1"
+      },
+      {
+        "phrase": "sasha cosmetics официальный сайт",
+        "count": "3"
+      }
+    ],
+    "totalCount": "1"
+  }
+}
