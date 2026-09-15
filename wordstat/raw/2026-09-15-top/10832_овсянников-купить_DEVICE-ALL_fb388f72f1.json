@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T21:03:47+00:00",
+    "region_name": "Тульская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников купить",
+    "regions": [
+      "10832"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников купить",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "приобрести как пишется",
+        "count": "86"
+      },
+      {
+        "phrase": "купля продажа",
+        "count": "11677"
+      },
+      {
+        "phrase": "изт маркет",
+        "count": "1"
+      },
+      {
+        "phrase": "b2b продажи это",
+        "count": "26"
+      },
+      {
+        "phrase": "я покупаю",
+        "count": "973"
+      },
+      {
+        "phrase": "моя цена",
+        "count": "1143"
+      },
+      {
+        "phrase": "b2b продажи что это",
+        "count": "21"
+      },
+      {
+        "phrase": "отдел продаж",
+        "count": "629"
+      },
+      {
+        "phrase": "наши цены",
+        "count": "152"
+      },
+      {
+        "phrase": "ты знаешь себе цену ты бесценна",
+        "count": "4"
+      },
+      {
+        "phrase": "мои покупки",
+        "count": "297"
+      },
+      {
+        "phrase": "b2c продажи что это",
+        "count": "7"
+      },
+      {
+        "phrase": "розничная цена это",
+        "count": "16"
+      }
+    ],
+    "totalCount": "1"
+  }
+}

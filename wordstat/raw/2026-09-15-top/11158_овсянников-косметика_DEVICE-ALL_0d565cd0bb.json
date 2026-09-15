@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-15T21:03:31+00:00",
+    "region_name": "Курганская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников косметика",
+    "regions": [
+      "11158"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {}
+}
