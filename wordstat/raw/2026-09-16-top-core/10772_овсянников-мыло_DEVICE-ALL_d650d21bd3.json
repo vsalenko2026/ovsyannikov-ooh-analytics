@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-16T11:45:41+00:00",
+    "region_name": "Орловская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников мыло",
+    "regions": [
+      "10772"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 200
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников мыло",
+        "count": "4"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "дегтярное мыло",
+        "count": "424"
+      },
+      {
+        "phrase": "дегтярное мыло для чего",
+        "count": "37"
+      },
+      {
+        "phrase": "марсельское мыло",
+        "count": "2"
+      },
+      {
+        "phrase": "кокосовое хозяйственное мыло",
+        "count": "7"
+      },
+      {
+        "phrase": "мыло земляничное",
+        "count": "1"
+      },
+      {
+        "phrase": "можно ли умываться мылом",
+        "count": "15"
+      }
+    ],
+    "totalCount": "4"
+  }
+}

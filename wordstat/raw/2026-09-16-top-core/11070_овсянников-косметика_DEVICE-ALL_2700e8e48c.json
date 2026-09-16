@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-16T11:46:29+00:00",
+    "region_name": "Кировская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников косметика",
+    "regions": [
+      "11070"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 200
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников косметика",
+        "count": "2"
+      },
+      {
+        "phrase": "овсянников парфюмированная косметика",
+        "count": "2"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "kosmetista",
+        "count": "1"
+      },
+      {
+        "phrase": "эксфолиант что это",
+        "count": "10"
+      },
+      {
+        "phrase": "эксфолиант это",
+        "count": "10"
+      },
+      {
+        "phrase": "для чего нужен лосьон для лица",
+        "count": "5"
+      },
+      {
+        "phrase": "косметическое масло",
+        "count": "113"
+      },
+      {
+        "phrase": "что нужно для макияжа лица",
+        "count": "30"
+      },
+      {
+        "phrase": "эксфолиант что это такое",
+        "count": "1"
+      },
+      {
+        "phrase": "средства для ухода за лицом",
+        "count": "68"
+      },
+      {
+        "phrase": "косметические средства",
+        "count": "180"
+      },
+      {
+        "phrase": "aya cosmetics",
+        "count": "9"
+      },
+      {
+        "phrase": "тональное средство",
+        "count": "56"
+      },
+      {
+        "phrase": "что такое лосьон для лица",
+        "count": "2"
+      },
+      {
+        "phrase": "косметическая основа",
+        "count": "8"
+      },
+      {
+        "phrase": "podonail cosmetics",
+        "count": "13"
+      }
+    ],
+    "totalCount": "2"
+  }
+}

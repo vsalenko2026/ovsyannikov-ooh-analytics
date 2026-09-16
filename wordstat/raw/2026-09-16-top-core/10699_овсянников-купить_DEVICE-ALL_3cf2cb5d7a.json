@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-16T11:46:41+00:00",
+    "region_name": "Костромская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников купить",
+    "regions": [
+      "10699"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 200
+  },
+  "response": {
+    "results": [
+      {
+        "phrase": "овсянников купить",
+        "count": "26"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "приобрести как пишется",
+        "count": "33"
+      },
+      {
+        "phrase": "купля продажа",
+        "count": "5528"
+      },
+      {
+        "phrase": "изт маркет",
+        "count": "1"
+      },
+      {
+        "phrase": "b2b продажи это",
+        "count": "10"
+      },
+      {
+        "phrase": "я покупаю",
+        "count": "410"
+      },
+      {
+        "phrase": "моя цена",
+        "count": "337"
+      },
+      {
+        "phrase": "b2b продажи что это",
+        "count": "7"
+      },
+      {
+        "phrase": "отдел продаж",
+        "count": "309"
+      },
+      {
+        "phrase": "наши цены",
+        "count": "114"
+      },
+      {
+        "phrase": "мсг37 рф прайс листы",
+        "count": "3"
+      },
+      {
+        "phrase": "ты знаешь себе цену ты бесценна",
+        "count": "1"
+      },
+      {
+        "phrase": "мои покупки",
+        "count": "118"
+      },
+      {
+        "phrase": "b2c продажи что это",
+        "count": "2"
+      },
+      {
+        "phrase": "розничная цена это",
+        "count": "2"
+      }
+    ],
+    "totalCount": "26"
+  }
+}
