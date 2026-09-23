@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-23T06:18:10+00:00",
+    "region_name": "Ивановская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников мыло",
+    "regions": [
+      "10687"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 200
+  },
+  "response": {}
+}

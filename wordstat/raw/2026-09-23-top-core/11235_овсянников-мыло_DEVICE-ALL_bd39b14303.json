@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-23T06:18:09+00:00",
+    "region_name": "Алтайский край",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников мыло",
+    "regions": [
+      "11235"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 200
+  },
+  "response": {}
+}
