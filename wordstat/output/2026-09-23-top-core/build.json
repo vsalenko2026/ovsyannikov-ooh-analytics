@@ -1,10 +1,10 @@
 {
-  "raw_dir": "/home/user/ovsyannikov-ooh-analytics/wordstat/raw/2026-09-23-top-core",
+  "raw_dir": "/tmp/ovsyannikov-ooh-analytics/wordstat/raw/2026-09-23-top-core",
   "rows": 882,
   "nested": 207,
   "associations": 675,
   "phrases": 3,
   "regions": 23,
-  "top_csv": "/home/user/ovsyannikov-ooh-analytics/wordstat/output/2026-09-23-top-core/wordstat_top.csv",
-  "top_xlsx": "/home/user/ovsyannikov-ooh-analytics/wordstat/output/2026-09-23-top-core/wordstat_top.xlsx"
+  "top_csv": "/tmp/ovsyannikov-ooh-analytics/wordstat/output/2026-09-23-top-core/wordstat_top.csv",
+  "top_xlsx": "/tmp/ovsyannikov-ooh-analytics/wordstat/output/2026-09-23-top-core/wordstat_top.xlsx"
 }
