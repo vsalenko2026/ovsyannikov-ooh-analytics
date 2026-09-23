@@ -9,11 +9,11 @@
     "овсянников купить"
   ],
   "planned": 72,
-  "fetched": 28,
-  "from_cache": 0,
+  "fetched": 44,
+  "from_cache": 28,
   "errors": [],
-  "stopped_early": "квота исчерпана на 29-м вызове из 72",
-  "http_calls": 29,
-  "billable_calls": 28,
-  "cost_rub": 0.56
+  "stopped_early": "",
+  "http_calls": 44,
+  "billable_calls": 44,
+  "cost_rub": 0.88
 }

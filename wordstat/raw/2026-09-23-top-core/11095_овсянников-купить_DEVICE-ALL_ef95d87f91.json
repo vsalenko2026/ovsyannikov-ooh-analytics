@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-23T07:44:35+00:00",
+    "region_name": "Пензенская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников купить",
+    "regions": [
+      "11095"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 200
+  },
+  "response": {}
+}

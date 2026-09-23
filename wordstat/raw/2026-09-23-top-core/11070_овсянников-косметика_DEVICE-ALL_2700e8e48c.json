@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-23T07:44:18+00:00",
+    "region_name": "Кировская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников косметика",
+    "regions": [
+      "11070"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 200
+  },
+  "response": {}
+}
