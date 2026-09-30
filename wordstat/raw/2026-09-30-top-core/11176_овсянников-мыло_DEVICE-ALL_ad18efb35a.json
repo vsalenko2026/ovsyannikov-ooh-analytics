@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "fetched_at": "2026-09-30T15:03:07+00:00",
+    "region_name": "Тюменская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников мыло",
+    "regions": [
+      "11176"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 200
+  },
+  "response": {
+    "totalCount": "11",
+    "results": [
+      {
+        "phrase": "овсянников мыло",
+        "count": "11"
+      },
+      {
+        "phrase": "гель мыло овсянников",
+        "count": "7"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "дегтярное мыло",
+        "count": "594"
+      },
+      {
+        "phrase": "дегтярное мыло для чего",
+        "count": "95"
+      },
+      {
+        "phrase": "марсельское мыло",
+        "count": "14"
+      },
+      {
+        "phrase": "мыление мыла",
+        "count": "1"
+      },
+      {
+        "phrase": "кокосовое хозяйственное мыло",
+        "count": "13"
+      },
+      {
+        "phrase": "soap skin",
+        "count": "20"
+      },
+      {
+        "phrase": "мыло земляничное",
+        "count": "11"
+      },
+      {
+        "phrase": "можно ли умываться мылом",
+        "count": "8"
+      },
+      {
+        "phrase": "можно ли умываться дегтярным мылом",
+        "count": "2"
+      }
+    ]
+  }
+}
