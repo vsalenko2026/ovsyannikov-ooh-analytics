@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-07T15:04:00+00:00",
+    "region_name": "Костромская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников мыло",
+    "regions": [
+      "10699"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 200
+  },
+  "response": {
+    "totalCount": "1",
+    "results": [
+      {
+        "phrase": "овсянников мыло",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "дегтярное мыло",
+        "count": "276"
+      },
+      {
+        "phrase": "дегтярное мыло для чего",
+        "count": "13"
+      },
+      {
+        "phrase": "марсельское мыло",
+        "count": "26"
+      },
+      {
+        "phrase": "кокосовое хозяйственное мыло",
+        "count": "3"
+      },
+      {
+        "phrase": "soap skin",
+        "count": "4"
+      },
+      {
+        "phrase": "мыло земляничное",
+        "count": "5"
+      },
+      {
+        "phrase": "можно ли умываться мылом",
+        "count": "4"
+      },
+      {
+        "phrase": "можно ли умываться дегтярным мылом",
+        "count": "1"
+      },
+      {
+        "phrase": "можно ли мыться дегтярным мылом",
+        "count": "1"
+      }
+    ]
+  }
+}
