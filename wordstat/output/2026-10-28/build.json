@@ -1,0 +1,12 @@
+{
+  "raw_dir": "raw/2026-10-28",
+  "rows": 5184,
+  "period": "PERIOD_WEEKLY",
+  "week_anchor": "start",
+  "weeks": 27,
+  "regions": 24,
+  "phrases": 8,
+  "partial_weeks": [],
+  "long_csv": "output/2026-10-28/wordstat_long.csv",
+  "wide_xlsx": "output/2026-10-28/wordstat_wide.xlsx"
+}

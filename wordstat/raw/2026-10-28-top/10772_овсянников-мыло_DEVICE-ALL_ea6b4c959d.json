@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-28T12:43:35+00:00",
+    "region_name": "Орловская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников мыло",
+    "regions": [
+      "10772"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "totalCount": "2",
+    "results": [
+      {
+        "phrase": "овсянников мыло",
+        "count": "2"
+      },
+      {
+        "phrase": "мыло овсянников жидкое",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "дегтярное мыло",
+        "count": "285"
+      },
+      {
+        "phrase": "овсяный кисель польза",
+        "count": "2"
+      },
+      {
+        "phrase": "марсельское мыло",
+        "count": "1"
+      },
+      {
+        "phrase": "soap skin",
+        "count": "6"
+      },
+      {
+        "phrase": "дегтярное мыло для волос",
+        "count": "7"
+      },
+      {
+        "phrase": "зеленое мыло от вредителей инструкция",
+        "count": "2"
+      },
+      {
+        "phrase": "дегтярное мыло для чего",
+        "count": "43"
+      },
+      {
+        "phrase": "можно ли умываться дегтярным мылом",
+        "count": "2"
+      },
+      {
+        "phrase": "мыло земляничное",
+        "count": "2"
+      }
+    ]
+  }
+}

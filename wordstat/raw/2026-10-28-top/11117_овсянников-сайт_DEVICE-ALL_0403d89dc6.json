@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-28T12:45:14+00:00",
+    "region_name": "Республика Мордовия",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "11117"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "totalCount": "4",
+    "results": [
+      {
+        "phrase": "косметика овсянников официальный сайт",
+        "count": "4"
+      },
+      {
+        "phrase": "овсянников официальный сайт",
+        "count": "4"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "мезоматрикс официальный сайт",
+        "count": "7"
+      },
+      {
+        "phrase": "биодерма официальный сайт",
+        "count": "9"
+      },
+      {
+        "phrase": "этуаль интернет магазин официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "bioderma официальный сайт",
+        "count": "7"
+      },
+      {
+        "phrase": "mesomatrix официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "limba cosmetics официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "скинософи официальный сайт",
+        "count": "9"
+      },
+      {
+        "phrase": "liss skins официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "аравиа официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "veritate cosmetics официальный сайт",
+        "count": "6"
+      }
+    ]
+  }
+}

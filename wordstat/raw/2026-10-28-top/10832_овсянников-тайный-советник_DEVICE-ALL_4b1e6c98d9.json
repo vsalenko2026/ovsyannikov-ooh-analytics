@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-28T12:45:57+00:00",
+    "region_name": "Тульская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников тайный советник",
+    "regions": [
+      "10832"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "totalCount": "1",
+    "results": [
+      {
+        "phrase": "овсянников тайный советник",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "ушаков помощник президента биография",
+        "count": "37"
+      },
+      {
+        "phrase": "секта скопцов",
+        "count": "3"
+      },
+      {
+        "phrase": "я из секты меча",
+        "count": "3"
+      },
+      {
+        "phrase": "секретное досье книги по порядку",
+        "count": "12"
+      },
+      {
+        "phrase": "ассистентка злодея книга",
+        "count": "2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-28T12:46:03+00:00",
+    "region_name": "Воронежская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikovsoap",
+    "regions": [
+      "10672"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "totalCount": "5",
+    "results": [
+      {
+        "phrase": "ovsyannikovsoap ru",
+        "count": "4"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru крем",
+        "count": "4"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru мыло",
+        "count": "4"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru мыло крем",
+        "count": "4"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "моя страница",
+        "count": "158462"
+      },
+      {
+        "phrase": "үчи ру",
+        "count": "2832"
+      },
+      {
+        "phrase": "я ру",
+        "count": "1432"
+      },
+      {
+        "phrase": "уа ру",
+        "count": "24"
+      },
+      {
+        "phrase": "ф1ньюс ру",
+        "count": "81"
+      },
+      {
+        "phrase": "пережить ру",
+        "count": "11"
+      },
+      {
+        "phrase": "ты моя",
+        "count": "67324"
+      },
+      {
+        "phrase": "мое см",
+        "count": "308"
+      },
+      {
+        "phrase": "окру ру",
+        "count": "11"
+      },
+      {
+        "phrase": "ты мое все",
+        "count": "4150"
+      },
+      {
+        "phrase": "мвйл ру",
+        "count": "24"
+      },
+      {
+        "phrase": "t me что это за сайт",
+        "count": "5"
+      },
+      {
+        "phrase": "түрк ру",
+        "count": "130"
+      },
+      {
+        "phrase": "в к моя страница",
+        "count": "21"
+      },
+      {
+        "phrase": "не такой как все",
+        "count": "1821"
+      },
+      {
+        "phrase": "буду ру",
+        "count": "1623"
+      },
+      {
+        "phrase": "тұту ру",
+        "count": "5"
+      }
+    ]
+  }
+}

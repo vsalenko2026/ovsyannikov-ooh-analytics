@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-28T12:46:29+00:00",
+    "region_name": "Тюменская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "11176"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "totalCount": "11",
+    "results": [
+      {
+        "phrase": "ovsyannikov soap",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "mylo",
+        "count": "23"
+      },
+      {
+        "phrase": "можно ли мыться хозяйственным мылом",
+        "count": "1"
+      },
+      {
+        "phrase": "да здравствует мыло душистое и полотенце пушистое",
+        "count": "8"
+      },
+      {
+        "phrase": "мыло в попу",
+        "count": "45"
+      },
+      {
+        "phrase": "можно ли умываться хозяйственным мылом",
+        "count": "5"
+      },
+      {
+        "phrase": "мыльница для мыла",
+        "count": "11"
+      },
+      {
+        "phrase": "мыльнорыльное",
+        "count": "6"
+      },
+      {
+        "phrase": "как варить мыло из обмылков",
+        "count": "1"
+      },
+      {
+        "phrase": "мыление мыла",
+        "count": "1"
+      },
+      {
+        "phrase": "форма для мыла",
+        "count": "44"
+      },
+      {
+        "phrase": "мыло порошок",
+        "count": "109"
+      },
+      {
+        "phrase": "этапы умывания лица",
+        "count": "3"
+      },
+      {
+        "phrase": "попа в мыле",
+        "count": "27"
+      },
+      {
+        "phrase": "все для мыловарения",
+        "count": "1"
+      },
+      {
+        "phrase": "что будет если помыть голову мылом",
+        "count": "6"
+      },
+      {
+        "phrase": "мыльница для жидкого мыла",
+        "count": "5"
+      }
+    ]
+  }
+}

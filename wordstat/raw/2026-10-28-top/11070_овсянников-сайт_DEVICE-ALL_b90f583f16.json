@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-28T12:45:31+00:00",
+    "region_name": "Кировская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "11070"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "totalCount": "1",
+    "results": [
+      {
+        "phrase": "овсянников мыло официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "овсянников официальный сайт",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "зеленое яблоко интернет магазин официальный",
+        "count": "6"
+      },
+      {
+        "phrase": "елмай масло официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "profcosmo официальный сайт",
+        "count": "1"
+      }
+    ]
+  }
+}

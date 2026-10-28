@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-28T12:45:25+00:00",
+    "region_name": "Омская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "11318"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "totalCount": "2",
+    "results": [
+      {
+        "phrase": "косметика овсянников официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "овсянников официальный сайт",
+        "count": "2"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "мезоматрикс официальный сайт",
+        "count": "18"
+      },
+      {
+        "phrase": "биодерма официальный сайт",
+        "count": "11"
+      },
+      {
+        "phrase": "этуаль интернет магазин официальный сайт",
+        "count": "2"
+      },
+      {
+        "phrase": "janssen cosmetics официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "limba cosmetics официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "скинософи официальный сайт",
+        "count": "58"
+      },
+      {
+        "phrase": "фармакосметика официальный сайт",
+        "count": "6"
+      },
+      {
+        "phrase": "liss skins официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "аравиа официальный сайт",
+        "count": "12"
+      },
+      {
+        "phrase": "янссен косметикс официальный сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "veritate cosmetics официальный сайт",
+        "count": "1"
+      }
+    ]
+  }
+}

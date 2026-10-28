@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-28T12:46:16+00:00",
+    "region_name": "Ярославская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikovsoap",
+    "regions": [
+      "10841"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "totalCount": "4",
+    "results": [
+      {
+        "phrase": "ovsyannikovsoap ru",
+        "count": "4"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru мыло",
+        "count": "4"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru крем",
+        "count": "3"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru мыло крем",
+        "count": "3"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "моя страница",
+        "count": "79743"
+      },
+      {
+        "phrase": "үчи ру",
+        "count": "1389"
+      },
+      {
+        "phrase": "я ру",
+        "count": "639"
+      },
+      {
+        "phrase": "уа ру",
+        "count": "8"
+      },
+      {
+        "phrase": "ф1ньюс ру",
+        "count": "6"
+      },
+      {
+        "phrase": "пережить ру",
+        "count": "23"
+      },
+      {
+        "phrase": "ты моя",
+        "count": "33552"
+      },
+      {
+        "phrase": "мое см",
+        "count": "138"
+      },
+      {
+        "phrase": "окру ру",
+        "count": "3"
+      },
+      {
+        "phrase": "ты мое все",
+        "count": "2177"
+      },
+      {
+        "phrase": "мвйл ру",
+        "count": "7"
+      },
+      {
+        "phrase": "t me что это за сайт",
+        "count": "4"
+      },
+      {
+        "phrase": "түрк ру",
+        "count": "117"
+      },
+      {
+        "phrase": "в к моя страница",
+        "count": "17"
+      },
+      {
+        "phrase": "не такой как все",
+        "count": "1050"
+      },
+      {
+        "phrase": "буду ру",
+        "count": "821"
+      },
+      {
+        "phrase": "тұту ру",
+        "count": "3"
+      }
+    ]
+  }
+}

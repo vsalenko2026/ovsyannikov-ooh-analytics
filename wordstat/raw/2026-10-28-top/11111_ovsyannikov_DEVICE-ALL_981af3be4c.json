@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-28T12:46:36+00:00",
+    "region_name": "Республика Башкортостан",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "ovsyannikov",
+    "regions": [
+      "11111"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "totalCount": "3"
+  }
+}

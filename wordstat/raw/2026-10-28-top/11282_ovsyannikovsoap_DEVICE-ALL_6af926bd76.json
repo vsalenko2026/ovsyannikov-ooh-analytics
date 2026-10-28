@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "fetched_at": "2026-10-28T12:46:29+00:00",
+    "region_name": "Кемеровская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "ovsyannikovsoap",
+    "regions": [
+      "11282"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {
+    "totalCount": "1",
+    "results": [
+      {
+        "phrase": "ovsyannikovsoap ru",
+        "count": "1"
+      },
+      {
+        "phrase": "ovsyannikovsoap ru крем",
+        "count": "1"
+      }
+    ],
+    "associations": [
+      {
+        "phrase": "моя страница",
+        "count": "156578"
+      },
+      {
+        "phrase": "үчи ру",
+        "count": "6044"
+      },
+      {
+        "phrase": "я ру",
+        "count": "1280"
+      },
+      {
+        "phrase": "уа ру",
+        "count": "18"
+      },
+      {
+        "phrase": "ф1ньюс ру",
+        "count": "30"
+      },
+      {
+        "phrase": "пережить ру",
+        "count": "5"
+      },
+      {
+        "phrase": "ты моя",
+        "count": "62789"
+      },
+      {
+        "phrase": "втказан ру",
+        "count": "1"
+      },
+      {
+        "phrase": "мое см",
+        "count": "362"
+      },
+      {
+        "phrase": "ты мое все",
+        "count": "4097"
+      },
+      {
+        "phrase": "мвйл ру",
+        "count": "1"
+      },
+      {
+        "phrase": "t me что это за сайт",
+        "count": "1"
+      },
+      {
+        "phrase": "түрк ру",
+        "count": "91"
+      },
+      {
+        "phrase": "в к моя страница",
+        "count": "24"
+      },
+      {
+        "phrase": "не такой как все",
+        "count": "1844"
+      },
+      {
+        "phrase": "буду ру",
+        "count": "1362"
+      },
+      {
+        "phrase": "тұту ру",
+        "count": "1"
+      }
+    ]
+  }
+}
