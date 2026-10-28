@@ -1,0 +1,50 @@
+{
+  "run_date": "2026-10-28",
+  "planned": 96,
+  "fetched": 0,
+  "from_cache": 0,
+  "errors": [
+    {
+      "call": "Тюменская область · овсянников мыло · DEVICE_ALL",
+      "error": "dynamics: не удалось получить ответ за 3 попыток: HTTPSConnectionPool(host='searchapi.api.cloud.yandex.net', port=443): Max retries exceeded with url: /v2/wordstat/dynamics (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "call": "Волгоградская область · овсянников мыло · DEVICE_ALL",
+      "error": "dynamics: не удалось получить ответ за 3 попыток: HTTPSConnectionPool(host='searchapi.api.cloud.yandex.net', port=443): Max retries exceeded with url: /v2/wordstat/dynamics (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "call": "Воронежская область · овсянников мыло · DEVICE_ALL",
+      "error": "dynamics: не удалось получить ответ за 3 попыток: HTTPSConnectionPool(host='searchapi.api.cloud.yandex.net', port=443): Max retries exceeded with url: /v2/wordstat/dynamics (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "call": "Республика Мордовия · овсянников мыло · DEVICE_ALL",
+      "error": "dynamics: не удалось получить ответ за 3 попыток: HTTPSConnectionPool(host='searchapi.api.cloud.yandex.net', port=443): Max retries exceeded with url: /v2/wordstat/dynamics (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    },
+    {
+      "call": "Рязанская область · овсянников мыло · DEVICE_ALL",
+      "error": "dynamics: не удалось получить ответ за 3 попыток: HTTPSConnectionPool(host='searchapi.api.cloud.yandex.net', port=443): Max retries exceeded with url: /v2/wordstat/dynamics (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    }
+  ],
+  "stopped_early": "5 неудачных вызовов подряд на 5-м из 96",
+  "period": "PERIOD_WEEKLY",
+  "from_date": "2026-03-30",
+  "to_date": "2026-10-25",
+  "phrases": [
+    "овсянников мыло",
+    "овсянников косметика",
+    "овсянников купить",
+    "овсянников крем",
+    "овсянников сайт",
+    "овсянников тайный советник",
+    "ovsyannikovsoap",
+    "ovsyannikov"
+  ],
+  "devices": [
+    "DEVICE_ALL"
+  ],
+  "regions": 24,
+  "http_calls": 15,
+  "billable_calls": 0,
+  "retries": 10,
+  "cost_rub": 0.0
+}
