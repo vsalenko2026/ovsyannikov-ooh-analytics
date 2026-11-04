@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-11-04T16:01:36+00:00",
+    "region_name": "Рязанская область",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников тайный советник",
+    "regions": [
+      "10776"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {}
+}
