@@ -1,0 +1,29 @@
+{
+  "run_date": "2026-11-04",
+  "planned": 96,
+  "fetched": 10,
+  "from_cache": 0,
+  "errors": [],
+  "stopped_early": "квота исчерпана на 11-м вызове из 96",
+  "period": "PERIOD_WEEKLY",
+  "from_date": "2026-03-30",
+  "to_date": "2026-11-01",
+  "phrases": [
+    "овсянников мыло",
+    "овсянников косметика",
+    "овсянников купить",
+    "овсянников крем",
+    "овсянников сайт",
+    "овсянников тайный советник",
+    "ovsyannikovsoap",
+    "ovsyannikov"
+  ],
+  "devices": [
+    "DEVICE_ALL"
+  ],
+  "regions": 24,
+  "http_calls": 11,
+  "billable_calls": 10,
+  "retries": 0,
+  "cost_rub": 0.2
+}
