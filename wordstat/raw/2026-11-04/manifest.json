@@ -1,8 +1,8 @@
 {
   "run_date": "2026-11-04",
   "planned": 96,
-  "fetched": 86,
-  "from_cache": 10,
+  "fetched": 0,
+  "from_cache": 96,
   "errors": [],
   "stopped_early": "",
   "period": "PERIOD_WEEKLY",
@@ -22,8 +22,8 @@
     "DEVICE_ALL"
   ],
   "regions": 24,
-  "http_calls": 86,
-  "billable_calls": 86,
+  "http_calls": 0,
+  "billable_calls": 0,
   "retries": 0,
-  "cost_rub": 1.72
+  "cost_rub": 0.0
 }
