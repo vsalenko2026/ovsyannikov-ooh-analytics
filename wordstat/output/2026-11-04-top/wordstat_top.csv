@@ -1,4 +1,271 @@
 ﻿fetched_at,phrase,region_name,region_id,region_type,device,kind,rank,nested_phrase,count,total_count
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,1,mylo,23,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,2,можно ли мыться хозяйственным мылом,1,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,3,да здравствует мыло душистое и полотенце пушистое,8,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,4,мыло в попу,45,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,5,можно ли умываться хозяйственным мылом,5,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,6,мыльница для мыла,11,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,7,мыльнорыльное,6,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,8,как варить мыло из обмылков,1,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,9,мыление мыла,1,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,10,форма для мыла,44,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,11,мыло порошок,109,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,12,этапы умывания лица,3,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,13,попа в мыле,27,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,14,все для мыловарения,1,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,15,что будет если помыть голову мылом,6,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,association,16,мыльница для жидкого мыла,5,11
+2026-11-04,ovsyannikov,Тюменская область,11176,campaign,DEVICE_ALL,nested,1,ovsyannikov soap,1,11
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,1,моя страница,89910,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,2,үчи ру,3223,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,3,я ру,782,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,4,уа ру,18,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,5,ф1ньюс ру,48,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,6,пережить ру,19,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,7,ты моя,45684,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,8,мое см,343,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,9,ты мое все,2875,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,10,мвйл ру,7,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,11,t me что это за сайт,4,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,12,түрк ру,156,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,13,в к моя страница,23,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,14,не такой как все,1436,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,15,буду ру,940,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,association,16,тұту ру,11,1
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,1,моя страница,158462,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,2,үчи ру,2832,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,3,я ру,1432,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,4,уа ру,24,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,5,ф1ньюс ру,81,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,6,пережить ру,11,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,7,ты моя,67324,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,8,мое см,308,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,9,окру ру,11,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,10,ты мое все,4150,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,11,мвйл ру,24,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,12,t me что это за сайт,5,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,13,түрк ру,130,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,14,в к моя страница,21,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,15,не такой как все,1821,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,16,буду ру,1623,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,association,17,тұту ру,5,5
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,1,моя страница,50786,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,2,үчи ру,1098,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,3,я ру,313,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,4,уа ру,8,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,5,ф1ньюс ру,1,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,6,пережить ру,6,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,7,ты моя,19438,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,8,мое см,73,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,9,ты мое все,1130,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,10,мвйл ру,3,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,11,t me что это за сайт,2,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,12,түрк ру,171,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,13,в к моя страница,25,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,14,не такой как все,532,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,association,15,буду ру,338,1
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,1,моя страница,49851,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,2,үчи ру,924,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,3,я ру,423,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,4,уа ру,12,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,5,ф1ньюс ру,2,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,6,пережить ру,38,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,7,ты моя,22675,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,8,мое см,125,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,9,окру ру,1,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,10,ты мое все,1325,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,11,түрк ру,12,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,12,в к моя страница,10,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,13,не такой как все,529,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,14,буду ру,423,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,association,15,тұту ру,1,4
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,1,моя страница,68388,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,2,үчи ру,478,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,3,я ру,460,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,4,уа ру,31,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,5,ф1ньюс ру,161,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,6,пережить ру,3,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,7,ты моя,35778,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,8,мое см,162,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,9,окру ру,2,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,10,ты мое все,2189,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,11,мвйл ру,1,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,12,t me что это за сайт,2,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,13,түрк ру,174,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,14,в к моя страница,39,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,15,не такой как все,914,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,16,буду ру,662,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,association,17,тұту ру,1,2
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,1,моя страница,79743,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,2,үчи ру,1389,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,3,я ру,639,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,4,уа ру,8,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,5,ф1ньюс ру,6,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,6,пережить ру,23,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,7,ты моя,33552,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,8,мое см,138,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,9,окру ру,3,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,10,ты мое все,2177,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,11,мвйл ру,7,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,12,t me что это за сайт,4,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,13,түрк ру,117,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,14,в к моя страница,17,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,15,не такой как все,1050,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,16,буду ру,821,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,association,17,тұту ру,3,4
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,1,моя страница,48253,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,2,үчи ру,419,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,3,я ру,395,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,4,уа ру,7,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,5,ф1ньюс ру,3,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,6,пережить ру,1,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,7,ты моя,18563,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,8,мое см,49,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,9,ты мое все,1239,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,10,мвйл ру,1,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,11,t me что это за сайт,2,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,12,түрк ру,56,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,13,в к моя страница,8,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,14,не такой как все,701,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,15,буду ру,376,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,association,16,тұту ру,2,1
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,1,моя страница,174021,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,2,үчи ру,4659,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,3,я ру,1706,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,4,уа ру,66,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,5,ф1ньюс ру,72,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,6,пережить ру,62,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,7,ты моя,88069,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,8,мое см,493,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,9,ты мое все,5451,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,10,мвйл ру,31,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,11,t me что это за сайт,10,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,12,түрк ру,296,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,13,в к моя страница,40,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,14,не такой как все,2795,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,15,буду ру,1619,2
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,association,16,тұту ру,8,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,1,моя страница,155238,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,2,үчи ру,4352,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,3,я ру,1542,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,4,уа ру,18,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,5,ф1ньюс ру,114,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,6,пережить ру,100,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,7,ты моя,68865,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,8,втказан ру,2,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,9,мое см,374,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,10,окру ру,3,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,11,ты мое все,4046,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,12,мвйл ру,8,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,13,t me что это за сайт,5,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,14,түрк ру,405,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,15,в к моя страница,34,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,16,не такой как все,1948,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,association,17,буду ру,2036,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,1,моя страница,64969,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,2,үчи ру,2300,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,3,я ру,624,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,4,уа ру,107,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,5,ф1ньюс ру,35,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,6,пережить ру,1,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,7,ты моя,25237,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,8,мое см,107,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,9,окру ру,2,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,10,ты мое все,1360,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,11,мвйл ру,3,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,12,t me что это за сайт,1,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,13,түрк ру,195,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,14,в к моя страница,12,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,15,не такой как все,740,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,association,16,буду ру,676,2
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,1,моя страница,99323,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,2,үчи ру,2263,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,3,я ру,1114,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,4,уа ру,11,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,5,ф1ньюс ру,9,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,6,пережить ру,10,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,7,ты моя,49015,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,8,мое см,312,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,9,окру ру,5,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,10,ты мое все,3055,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,11,мвйл ру,19,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,12,t me что это за сайт,4,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,13,түрк ру,137,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,14,в к моя страница,41,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,15,не такой как все,1398,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,16,буду ру,1274,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,association,17,тұту ру,4,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,1,моя страница,34184,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,2,үчи ру,623,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,3,я ру,418,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,4,уа ру,1,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,5,ф1ньюс ру,12,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,6,пережить ру,12,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,7,ты моя,24557,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,8,мое см,186,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,9,окру ру,4,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,10,ты мое все,1642,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,11,t me что это за сайт,1,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,12,түрк ру,276,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,13,в к моя страница,5,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,14,не такой как все,576,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,15,буду ру,488,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,association,16,тұту ру,1,3
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,1,моя страница,156578,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,2,үчи ру,6044,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,3,я ру,1280,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,4,уа ру,18,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,5,ф1ньюс ру,30,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,6,пережить ру,5,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,7,ты моя,62789,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,8,втказан ру,1,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,9,мое см,362,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,10,ты мое все,4097,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,11,мвйл ру,1,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,12,t me что это за сайт,1,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,13,түрк ру,91,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,14,в к моя страница,24,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,15,не такой как все,1844,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,16,буду ру,1362,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,association,17,тұту ру,1,1
+2026-11-04,ovsyannikovsoap,Тюменская область,11176,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,1,1
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,4,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,nested,2,ovsyannikovsoap ru крем,4,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,nested,3,ovsyannikovsoap ru мыло,4,5
+2026-11-04,ovsyannikovsoap,Воронежская область,10672,campaign,DEVICE_ALL,nested,4,ovsyannikovsoap ru мыло крем,4,5
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,1,1
+2026-11-04,ovsyannikovsoap,Республика Мордовия,11117,campaign,DEVICE_ALL,nested,2,ovsyannikovsoap ru мыло,1,1
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,3,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,nested,2,ovsyannikovsoap ru крем,3,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,nested,3,ovsyannikovsoap ru мыло,3,4
+2026-11-04,ovsyannikovsoap,Орловская область,10772,campaign,DEVICE_ALL,nested,4,ovsyannikovsoap ru мыло крем,3,4
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,2,2
+2026-11-04,ovsyannikovsoap,Рязанская область,10776,campaign,DEVICE_ALL,nested,2,ovsyannikovsoap ru крем,2,2
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,4,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,nested,2,ovsyannikovsoap ru мыло,4,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,nested,3,ovsyannikovsoap ru крем,3,4
+2026-11-04,ovsyannikovsoap,Ярославская область,10841,campaign,DEVICE_ALL,nested,4,ovsyannikovsoap ru мыло крем,3,4
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,1,1
+2026-11-04,ovsyannikovsoap,Костромская область,10699,campaign,DEVICE_ALL,nested,2,ovsyannikovsoap ru мыло,1,1
+2026-11-04,ovsyannikovsoap,Новосибирская область,11316,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,1,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,1,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,nested,2,ovsyannikovsoap ru крем,1,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,nested,3,ovsyannikovsoap ru мыло,1,2
+2026-11-04,ovsyannikovsoap,Саратовская область,11146,campaign,DEVICE_ALL,nested,4,ovsyannikovsoap ru мыло крем,1,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,2,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,nested,2,ovsyannikovsoap ru крем,2,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,nested,3,ovsyannikovsoap ru мыло,2,2
+2026-11-04,ovsyannikovsoap,Ивановская область,10687,campaign,DEVICE_ALL,nested,4,ovsyannikovsoap ru мыло крем,2,2
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,nested,1,ovsyannikovsoap ru,2,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,nested,2,ovsyannikovsoap ru мыло,2,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,nested,3,ovsyannikovsoap ru крем,1,3
+2026-11-04,ovsyannikovsoap,Омская область,11318,campaign,DEVICE_ALL,nested,4,ovsyannikovsoap ru мыло крем,1,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,nested,1,ovsyannikovsoap ru,3,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,nested,2,ovsyannikovsoap ru крем,3,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,nested,3,ovsyannikovsoap ru мыло,2,3
+2026-11-04,ovsyannikovsoap,Астраханская область,10946,control,DEVICE_ALL,nested,4,ovsyannikovsoap ru мыло крем,2,3
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,nested,1,ovsyannikovsoap ru,1,1
+2026-11-04,ovsyannikovsoap,Кемеровская область,11282,control,DEVICE_ALL,nested,2,ovsyannikovsoap ru крем,1,1
 2026-11-04,овсянников косметика,Тюменская область,11176,campaign,DEVICE_ALL,association,1,эксфолиант что это,8,28
 2026-11-04,овсянников косметика,Тюменская область,11176,campaign,DEVICE_ALL,association,2,эксфолиант это,16,28
 2026-11-04,овсянников косметика,Тюменская область,11176,campaign,DEVICE_ALL,association,3,косметические средства,208,28
@@ -1171,3 +1438,360 @@
 2026-11-04,овсянников мыло,Ростовская область,11029,control,DEVICE_ALL,nested,3,мыло овсянников жидкое купить,1,10
 2026-11-04,овсянников мыло,Ростовская область,11029,control,DEVICE_ALL,nested,4,овсянников мыло купить,1,10
 2026-11-04,овсянников мыло,Тульская область,10832,control,DEVICE_ALL,nested,1,овсянников мыло,1,1
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,1,столички официальный сайт,11,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,2,4pda официальный сайт,68,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,3,фмза официальный сайт,94,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,4,эссевен официальный сайт,24,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,5,цамо официальный сайт,8,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,6,юду ру официальный сайт,23,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,7,n8n официальный сайт,16,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,8,миуз официальный сайт,46,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,9,bmai официальный сайт,17,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,10,вфла официальный сайт,38,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,11,v2sd официальный сайт,14,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,12,jjsel официальный сайт,3,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,association,13,фмца официальный сайт,5,4
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,1,мезоматрикс официальный сайт,29,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,2,биодерма официальный сайт,27,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,3,bioderma официальный сайт,5,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,4,mesomatrix официальный сайт,9,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,5,limba cosmetics официальный сайт,5,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,6,скинософи официальный сайт,55,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,7,liss skins официальный сайт,4,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,8,аравиа официальный сайт,1,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,9,янссен косметикс официальный сайт,9,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,10,сиберика косметика официальный интернет магазин,1,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,11,профкосмо официальный сайт,2,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,12,мезопрофф официальный сайт,4,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,13,veritate cosmetics официальный сайт,9,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,association,14,бьюти гель официальный сайт,5,19
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,1,мезоматрикс официальный сайт,61,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,2,биодерма официальный сайт,37,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,3,этуаль интернет магазин официальный сайт,3,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,4,janssen cosmetics официальный сайт,8,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,5,bioderma официальный сайт,4,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,6,mesomatrix официальный сайт,5,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,7,скинософи официальный сайт,19,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,8,фармакосметика официальный сайт,7,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,9,liss skins официальный сайт,6,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,10,аравиа официальный сайт,7,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,11,янссен косметикс официальный сайт,9,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,12,сиберика косметика официальный интернет магазин,3,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,13,профкосмо официальный сайт,21,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,14,профикосметикс официальный сайт,2,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,association,15,veritate cosmetics официальный сайт,6,11
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,association,1,мезоматрикс официальный сайт,7,4
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,association,2,биодерма официальный сайт,9,4
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,association,3,этуаль интернет магазин официальный сайт,1,4
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,association,4,bioderma официальный сайт,7,4
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,association,5,mesomatrix официальный сайт,1,4
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,association,6,limba cosmetics официальный сайт,1,4
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,association,7,скинософи официальный сайт,9,4
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,association,8,liss skins официальный сайт,1,4
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,association,9,аравиа официальный сайт,2,4
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,association,10,veritate cosmetics официальный сайт,6,4
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,1,столички официальный сайт,68,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,2,4pda официальный сайт,15,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,3,фмза официальный сайт,1,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,4,эссевен официальный сайт,4,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,5,цамо официальный сайт,1,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,6,юду ру официальный сайт,10,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,7,n8n официальный сайт,1,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,8,миуз официальный сайт,1,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,9,bmai официальный сайт,2,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,10,вфла официальный сайт,17,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,11,жхл официальный сайт,1,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,12,мфф официальный сайт,1,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,13,v2sd официальный сайт,27,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,14,jjsel официальный сайт,1,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,association,15,гс1рус официальный сайт,2,9
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,1,столички официальный сайт,1192,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,2,4pda официальный сайт,41,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,3,фмза официальный сайт,24,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,4,эссевен официальный сайт,7,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,5,цамо официальный сайт,10,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,6,юду ру официальный сайт,7,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,7,n8n официальный сайт,3,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,8,миуз официальный сайт,8,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,9,bmai официальный сайт,12,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,10,вфла официальный сайт,34,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,11,жхл официальный сайт,2,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,12,мфф официальный сайт,4,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,13,v2sd официальный сайт,35,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,14,jjsel официальный сайт,5,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,association,15,фмца официальный сайт,4,5
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,1,столички официальный сайт,750,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,2,4pda официальный сайт,31,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,3,фмза официальный сайт,9,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,4,эссевен официальный сайт,12,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,5,цамо официальный сайт,8,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,6,юду ру официальный сайт,19,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,7,n8n официальный сайт,5,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,8,миуз официальный сайт,19,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,9,bmai официальный сайт,12,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,10,вфла официальный сайт,15,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,11,жхл официальный сайт,21,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,12,мфф официальный сайт,30,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,13,v2sd официальный сайт,10,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,14,jjsel официальный сайт,1,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,15,ммома официальный сайт,5,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,16,гс1рус официальный сайт,6,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,association,17,фмца официальный сайт,2,45
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,1,мезоматрикс официальный сайт,4,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,2,биодерма официальный сайт,1,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,3,этуаль интернет магазин официальный сайт,5,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,4,janssen cosmetics официальный сайт,5,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,5,bioderma официальный сайт,2,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,6,mesomatrix официальный сайт,4,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,7,скинософи официальный сайт,6,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,8,фармакосметика официальный сайт,2,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,9,liss skins официальный сайт,2,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,10,аравиа официальный сайт,3,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,association,11,мезопрофф официальный сайт,1,11
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,1,мезоматрикс официальный сайт,41,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,2,биодерма официальный сайт,75,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,3,этуаль интернет магазин официальный сайт,6,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,4,janssen cosmetics официальный сайт,5,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,5,bioderma официальный сайт,21,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,6,mesomatrix официальный сайт,2,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,7,limba cosmetics официальный сайт,3,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,8,скинософи официальный сайт,16,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,9,фармакосметика официальный сайт,2,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,10,liss skins официальный сайт,5,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,11,аравиа официальный сайт,20,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,12,янссен косметикс официальный сайт,1,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,13,мезопрофф официальный сайт,1,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,14,veritate cosmetics официальный сайт,9,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,association,15,бьюти гель официальный сайт,5,21
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,1,мезоматрикс официальный сайт,23,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,2,биодерма официальный сайт,35,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,3,этуаль интернет магазин официальный сайт,1,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,4,janssen cosmetics официальный сайт,1,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,5,bioderma официальный сайт,2,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,6,mesomatrix официальный сайт,5,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,7,limba cosmetics официальный сайт,1,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,8,скинософи официальный сайт,23,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,9,фармакосметика официальный сайт,1,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,10,аравиа официальный сайт,5,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,11,янссен косметикс официальный сайт,1,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,12,сиберика косметика официальный интернет магазин,2,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,13,veritate cosmetics официальный сайт,6,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,association,14,бьюти гель официальный сайт,1,7
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,1,столички официальный сайт,26,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,2,4pda официальный сайт,8,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,3,фмза официальный сайт,17,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,4,эссевен официальный сайт,240,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,5,цамо официальный сайт,6,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,6,юду ру официальный сайт,9,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,7,n8n официальный сайт,1,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,8,миуз официальный сайт,7,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,9,bmai официальный сайт,6,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,10,вфла официальный сайт,9,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,11,жхл официальный сайт,5,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,12,v2sd официальный сайт,13,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,association,13,jjsel официальный сайт,3,2
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,1,столички официальный сайт,33,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,2,4pda официальный сайт,15,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,3,фмза официальный сайт,4,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,4,эссевен официальный сайт,1,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,5,цамо официальный сайт,9,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,6,юду ру официальный сайт,8,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,7,n8n официальный сайт,8,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,8,миуз официальный сайт,5,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,9,bmai официальный сайт,3,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,10,вфла официальный сайт,23,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,11,жхл официальный сайт,3,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,12,мфф официальный сайт,32,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,13,v2sd официальный сайт,2,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,14,ммома официальный сайт,2,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,15,гс1рус официальный сайт,1,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,association,16,фмца официальный сайт,1,8
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,association,1,мезоматрикс официальный сайт,31,1
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,association,2,биодерма официальный сайт,19,1
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,association,3,janssen cosmetics официальный сайт,1,1
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,association,4,limba cosmetics официальный сайт,1,1
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,association,5,скинософи официальный сайт,10,1
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,association,6,аравиа официальный сайт,1,1
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,association,7,сиберика косметика официальный интернет магазин,1,1
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,association,8,профкосмо официальный сайт,2,1
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,association,9,профикосметикс официальный сайт,5,1
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,association,10,veritate cosmetics официальный сайт,1,1
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,1,мезоматрикс официальный сайт,18,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,2,биодерма официальный сайт,11,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,3,этуаль интернет магазин официальный сайт,2,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,4,janssen cosmetics официальный сайт,1,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,5,limba cosmetics официальный сайт,1,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,6,скинософи официальный сайт,58,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,7,фармакосметика официальный сайт,6,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,8,liss skins официальный сайт,1,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,9,аравиа официальный сайт,12,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,10,янссен косметикс официальный сайт,1,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,association,11,veritate cosmetics официальный сайт,1,2
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,1,столички официальный сайт,8,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,2,4pda официальный сайт,84,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,3,фмза официальный сайт,53,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,4,эссевен официальный сайт,368,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,5,цамо официальный сайт,13,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,6,юду ру официальный сайт,21,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,7,n8n официальный сайт,10,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,8,миуз официальный сайт,13,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,9,bmai официальный сайт,3,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,10,вфла официальный сайт,27,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,11,жхл официальный сайт,5,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,12,мфф официальный сайт,15,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,13,v2sd официальный сайт,2,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,14,гс1рус официальный сайт,2,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,association,15,фмца официальный сайт,3,5
+2026-11-04,овсянников сайт,Кировская область,11070,control,DEVICE_ALL,association,1,зеленое яблоко интернет магазин официальный,6,1
+2026-11-04,овсянников сайт,Кировская область,11070,control,DEVICE_ALL,association,2,елмай масло официальный сайт,2,1
+2026-11-04,овсянников сайт,Кировская область,11070,control,DEVICE_ALL,association,3,profcosmo официальный сайт,1,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,1,фипи официальный сайт,1176,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,2,фмза официальный сайт,152,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,3,мифи официальный сайт,1370,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,4,цамо официальный сайт,18,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,5,n8n официальный сайт,11,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,6,уникма официальный сайт,36,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,7,фввср официальный сайт,22,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,8,миуз официальный сайт,170,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,9,оджи официальный сайт,55,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,10,bmai официальный сайт,15,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,11,вфла официальный сайт,83,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,12,жхл официальный сайт,2,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,13,skin1004 официальный сайт,18,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,14,boxraw официальный сайт,15,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,15,v2sd официальный сайт,17,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,16,boxbot официальный сайт,20,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,17,jjsel официальный сайт,3,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,18,итц марка официальный сайт,19,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,association,19,ваььдбириз официальный интернет магазин,1,1
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,1,сайт гущина,69,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,2,ксения александровна,290,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,3,фед ресурс ру официальный сайт,3,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,4,фкдин неофициальный сайт,18,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,5,сайт константина полякова,8,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,6,анна овсянникова,6,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,7,артемий лебедев сайт,13,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,8,ксении или ксение,16,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,9,мкнц им а с логинова официальный сайт,8,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,10,е621 сайт,2,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,11,сайт артемия лебедева,13,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,12,сайт дмитрия гущина,11,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,association,13,ксюша шгш пх,2,7
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,nested,1,овсянников официальный сайт,4,4
+2026-11-04,овсянников сайт,Тюменская область,11176,campaign,DEVICE_ALL,nested,2,косметика овсянников официальный сайт,3,4
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,nested,1,косметика овсянников официальный сайт,19,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,nested,2,овсянников официальный сайт,19,19
+2026-11-04,овсянников сайт,Волгоградская область,10950,campaign,DEVICE_ALL,nested,3,косметика овсянников официальный сайт и парфюмерия,1,19
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,nested,1,косметика овсянников официальный сайт,9,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,nested,2,овсянников официальный сайт,9,11
+2026-11-04,овсянников сайт,Воронежская область,10672,campaign,DEVICE_ALL,nested,3,косметика овсянников официальный сайт и парфюмерия,1,11
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,nested,1,косметика овсянников официальный сайт,4,4
+2026-11-04,овсянников сайт,Республика Мордовия,11117,campaign,DEVICE_ALL,nested,2,овсянников официальный сайт,4,4
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,nested,1,овсянников официальный сайт,7,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,nested,2,косметика овсянников официальный сайт,5,9
+2026-11-04,овсянников сайт,Орловская область,10772,campaign,DEVICE_ALL,nested,3,косметика овсянников официальный сайт и парфюмерия,2,9
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,nested,1,овсянников официальный сайт,6,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,nested,2,косметика овсянников официальный сайт,4,5
+2026-11-04,овсянников сайт,Рязанская область,10776,campaign,DEVICE_ALL,nested,3,косметика овсянников официальный сайт и парфюмерия,2,5
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,nested,1,овсянников официальный сайт,42,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,nested,2,косметика овсянников официальный сайт,29,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,nested,3,косметика овсянников официальный сайт и парфюмерия,7,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,nested,4,овсянников мыло официальный сайт,5,45
+2026-11-04,овсянников сайт,Ярославская область,10841,campaign,DEVICE_ALL,nested,5,бренд овсянников официальный сайт,3,45
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,nested,1,косметика овсянников официальный сайт,10,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,nested,2,овсянников официальный сайт,10,11
+2026-11-04,овсянников сайт,Костромская область,10699,campaign,DEVICE_ALL,nested,3,косметика овсянников официальный сайт и парфюмерия,2,11
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,nested,1,косметика овсянников официальный сайт,12,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,nested,2,овсянников официальный сайт,12,21
+2026-11-04,овсянников сайт,Новосибирская область,11316,campaign,DEVICE_ALL,nested,3,косметика овсянников официальный сайт и парфюмерия,3,21
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,nested,1,косметика овсянников официальный сайт,7,7
+2026-11-04,овсянников сайт,Саратовская область,11146,campaign,DEVICE_ALL,nested,2,овсянников официальный сайт,7,7
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,nested,1,овсянников официальный сайт,2,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,nested,2,овсянников мыло официальный сайт,1,2
+2026-11-04,овсянников сайт,Томская область,11353,campaign,DEVICE_ALL,nested,3,косметика овсянников официальный сайт,1,2
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,nested,1,овсянников официальный сайт,9,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,nested,2,косметика овсянников официальный сайт,8,8
+2026-11-04,овсянников сайт,Вологодская область,10853,campaign,DEVICE_ALL,nested,3,овсянников мыло официальный сайт,1,8
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,nested,1,косметика овсянников официальный сайт,1,1
+2026-11-04,овсянников сайт,Ивановская область,10687,campaign,DEVICE_ALL,nested,2,овсянников официальный сайт,1,1
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,nested,1,косметика овсянников официальный сайт,2,2
+2026-11-04,овсянников сайт,Омская область,11318,campaign,DEVICE_ALL,nested,2,овсянников официальный сайт,2,2
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,nested,1,овсянников официальный сайт,3,5
+2026-11-04,овсянников сайт,Кемеровская область,11282,control,DEVICE_ALL,nested,2,косметика овсянников официальный сайт,1,5
+2026-11-04,овсянников сайт,Кировская область,11070,control,DEVICE_ALL,nested,1,овсянников мыло официальный сайт,1,1
+2026-11-04,овсянников сайт,Кировская область,11070,control,DEVICE_ALL,nested,2,овсянников официальный сайт,1,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,nested,1,бренд овсянников официальный сайт,1,1
+2026-11-04,овсянников сайт,Ростовская область,11029,control,DEVICE_ALL,nested,2,овсянников официальный сайт,1,1
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,nested,1,ксения овсянникова сайт,2,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,nested,2,косметика овсянников официальный сайт,2,7
+2026-11-04,овсянников сайт,Тульская область,10832,control,DEVICE_ALL,nested,3,овсянников официальный сайт,2,7
+2026-11-04,овсянников тайный советник,Воронежская область,10672,campaign,DEVICE_ALL,association,1,ушаков помощник президента биография,76,1
+2026-11-04,овсянников тайный советник,Воронежская область,10672,campaign,DEVICE_ALL,association,2,экстрасенсы ведут расследование илона новоселова,8,1
+2026-11-04,овсянников тайный советник,Воронежская область,10672,campaign,DEVICE_ALL,association,3,секта скопцов,15,1
+2026-11-04,овсянников тайный советник,Воронежская область,10672,campaign,DEVICE_ALL,association,4,ушаков юрий викторович помощник президента,6,1
+2026-11-04,овсянников тайный советник,Воронежская область,10672,campaign,DEVICE_ALL,association,5,секретное досье книги по порядку,11,1
+2026-11-04,овсянников тайный советник,Воронежская область,10672,campaign,DEVICE_ALL,association,6,ассистентка злодея книга,2,1
+2026-11-04,овсянников тайный советник,Ярославская область,10841,campaign,DEVICE_ALL,association,1,траумель мазь для чего предназначена,21,1
+2026-11-04,овсянников тайный советник,Ярославская область,10841,campaign,DEVICE_ALL,association,2,траумель мазь для чего предназначена инструкция,2,1
+2026-11-04,овсянников тайный советник,Ярославская область,10841,campaign,DEVICE_ALL,association,3,мазь бом бенге от чего помогает инструкция,2,1
+2026-11-04,овсянников тайный советник,Ярославская область,10841,campaign,DEVICE_ALL,association,4,ушаков юрий викторович помощник президента,1,1
+2026-11-04,овсянников тайный советник,Ярославская область,10841,campaign,DEVICE_ALL,association,5,как часто можно умываться энзимной пудрой,1,1
+2026-11-04,овсянников тайный советник,Ярославская область,10841,campaign,DEVICE_ALL,association,6,утро красит нежным светом стены древнего кремля,32,1
+2026-11-04,овсянников тайный советник,Липецкая область,10712,campaign,DEVICE_ALL,association,1,манифест о незыблемости самодержавия,68,6
+2026-11-04,овсянников тайный советник,Липецкая область,10712,campaign,DEVICE_ALL,association,2,итоги революции 1905 1907,16,6
+2026-11-04,овсянников тайный советник,Липецкая область,10712,campaign,DEVICE_ALL,association,3,издание манифеста о незыблемости самодержавия,7,6
+2026-11-04,овсянников тайный советник,Липецкая область,10712,campaign,DEVICE_ALL,association,4,ушаков помощник президента биография,51,6
+2026-11-04,овсянников тайный советник,Липецкая область,10712,campaign,DEVICE_ALL,association,5,кунгуров евгений что случилось причина смерти,4,6
+2026-11-04,овсянников тайный советник,Липецкая область,10712,campaign,DEVICE_ALL,association,6,как часто пестрою толпою окружен лермонтов,4,6
+2026-11-04,овсянников тайный советник,Новосибирская область,11316,campaign,DEVICE_ALL,association,1,ушаков помощник президента биография,49,5
+2026-11-04,овсянников тайный советник,Новосибирская область,11316,campaign,DEVICE_ALL,association,2,экстрасенсы ведут расследование илона новоселова,10,5
+2026-11-04,овсянников тайный советник,Новосибирская область,11316,campaign,DEVICE_ALL,association,3,секта скопцов,15,5
+2026-11-04,овсянников тайный советник,Новосибирская область,11316,campaign,DEVICE_ALL,association,4,ушаков юрий викторович помощник президента,4,5
+2026-11-04,овсянников тайный советник,Новосибирская область,11316,campaign,DEVICE_ALL,association,5,секретное досье книги по порядку,9,5
+2026-11-04,овсянников тайный советник,Новосибирская область,11316,campaign,DEVICE_ALL,association,6,ассистентка злодея книга,23,5
+2026-11-04,овсянников тайный советник,Саратовская область,11146,campaign,DEVICE_ALL,association,1,ушаков помощник президента биография,34,1
+2026-11-04,овсянников тайный советник,Саратовская область,11146,campaign,DEVICE_ALL,association,2,экстрасенсы ведут расследование илона новоселова,5,1
+2026-11-04,овсянников тайный советник,Саратовская область,11146,campaign,DEVICE_ALL,association,3,секта скопцов,10,1
+2026-11-04,овсянников тайный советник,Саратовская область,11146,campaign,DEVICE_ALL,association,4,ушаков юрий викторович помощник президента,1,1
+2026-11-04,овсянников тайный советник,Саратовская область,11146,campaign,DEVICE_ALL,association,5,я из секты меча,4,1
+2026-11-04,овсянников тайный советник,Саратовская область,11146,campaign,DEVICE_ALL,association,6,секретное досье книги по порядку,3,1
+2026-11-04,овсянников тайный советник,Вологодская область,10853,campaign,DEVICE_ALL,association,1,ушаков помощник президента биография,19,1
+2026-11-04,овсянников тайный советник,Вологодская область,10853,campaign,DEVICE_ALL,association,2,экстрасенсы ведут расследование илона новоселова,16,1
+2026-11-04,овсянников тайный советник,Вологодская область,10853,campaign,DEVICE_ALL,association,3,ушаков юрий викторович помощник президента,7,1
+2026-11-04,овсянников тайный советник,Вологодская область,10853,campaign,DEVICE_ALL,association,4,я из секты меча,3,1
+2026-11-04,овсянников тайный советник,Вологодская область,10853,campaign,DEVICE_ALL,association,5,секретное досье книги по порядку,1,1
+2026-11-04,овсянников тайный советник,Вологодская область,10853,campaign,DEVICE_ALL,association,6,ассистентка злодея книга,3,1
+2026-11-04,овсянников тайный советник,Ивановская область,10687,campaign,DEVICE_ALL,association,1,манифест о незыблемости самодержавия,31,5
+2026-11-04,овсянников тайный советник,Ивановская область,10687,campaign,DEVICE_ALL,association,2,итоги революции 1905 1907,9,5
+2026-11-04,овсянников тайный советник,Ивановская область,10687,campaign,DEVICE_ALL,association,3,издание манифеста о незыблемости самодержавия,9,5
+2026-11-04,овсянников тайный советник,Ивановская область,10687,campaign,DEVICE_ALL,association,4,ушаков помощник президента биография,25,5
+2026-11-04,овсянников тайный советник,Ивановская область,10687,campaign,DEVICE_ALL,association,5,кунгуров евгений что случилось причина смерти,6,5
+2026-11-04,овсянников тайный советник,Ивановская область,10687,campaign,DEVICE_ALL,association,6,как часто пестрою толпою окружен лермонтов,37,5
+2026-11-04,овсянников тайный советник,Ивановская область,10687,campaign,DEVICE_ALL,association,7,лидия шевцова политолог где сейчас,2,5
+2026-11-04,овсянников тайный советник,Ростовская область,11029,control,DEVICE_ALL,association,1,траумель мазь для чего предназначена,135,2
+2026-11-04,овсянников тайный советник,Ростовская область,11029,control,DEVICE_ALL,association,2,траумель мазь для чего предназначена инструкция,37,2
+2026-11-04,овсянников тайный советник,Ростовская область,11029,control,DEVICE_ALL,association,3,мазь бом бенге от чего помогает инструкция,21,2
+2026-11-04,овсянников тайный советник,Ростовская область,11029,control,DEVICE_ALL,association,4,ушаков юрий викторович помощник президента,15,2
+2026-11-04,овсянников тайный советник,Ростовская область,11029,control,DEVICE_ALL,association,5,мазь тербинафин для чего предназначена инструкция,3,2
+2026-11-04,овсянников тайный советник,Ростовская область,11029,control,DEVICE_ALL,association,6,утро красит нежным светом стены древнего кремля,26,2
+2026-11-04,овсянников тайный советник,Ростовская область,11029,control,DEVICE_ALL,association,7,сурков помощник президента где сейчас,6,2
+2026-11-04,овсянников тайный советник,Тульская область,10832,control,DEVICE_ALL,association,1,ушаков помощник президента биография,37,1
+2026-11-04,овсянников тайный советник,Тульская область,10832,control,DEVICE_ALL,association,2,секта скопцов,3,1
+2026-11-04,овсянников тайный советник,Тульская область,10832,control,DEVICE_ALL,association,3,я из секты меча,3,1
+2026-11-04,овсянников тайный советник,Тульская область,10832,control,DEVICE_ALL,association,4,секретное досье книги по порядку,12,1
+2026-11-04,овсянников тайный советник,Тульская область,10832,control,DEVICE_ALL,association,5,ассистентка злодея книга,2,1
+2026-11-04,овсянников тайный советник,Воронежская область,10672,campaign,DEVICE_ALL,nested,1,овсянников тайный советник,1,1
+2026-11-04,овсянников тайный советник,Ярославская область,10841,campaign,DEVICE_ALL,nested,1,овсянников крем для рук тайный советник,1,1
+2026-11-04,овсянников тайный советник,Ярославская область,10841,campaign,DEVICE_ALL,nested,2,овсянников тайный советник,1,1
+2026-11-04,овсянников тайный советник,Липецкая область,10712,campaign,DEVICE_ALL,nested,1,диффузор овсянников тайный советник,3,6
+2026-11-04,овсянников тайный советник,Липецкая область,10712,campaign,DEVICE_ALL,nested,2,овсянников тайный советник,3,6
+2026-11-04,овсянников тайный советник,Новосибирская область,11316,campaign,DEVICE_ALL,nested,1,овсянников тайный советник,5,5
+2026-11-04,овсянников тайный советник,Новосибирская область,11316,campaign,DEVICE_ALL,nested,2,овсянников тайный советник сосновый лимонад черный перец,3,5
+2026-11-04,овсянников тайный советник,Саратовская область,11146,campaign,DEVICE_ALL,nested,1,овсянников тайный советник,1,1
+2026-11-04,овсянников тайный советник,Вологодская область,10853,campaign,DEVICE_ALL,nested,1,овсянников тайный советник,1,1
+2026-11-04,овсянников тайный советник,Вологодская область,10853,campaign,DEVICE_ALL,nested,2,овсянников шампунь тайный советник,1,1
+2026-11-04,овсянников тайный советник,Ивановская область,10687,campaign,DEVICE_ALL,nested,1,диффузор овсянников тайный советник,3,5
+2026-11-04,овсянников тайный советник,Ивановская область,10687,campaign,DEVICE_ALL,nested,2,овсянников тайный советник,3,5
+2026-11-04,овсянников тайный советник,Ростовская область,11029,control,DEVICE_ALL,nested,1,овсянников крем для рук тайный советник,2,2
+2026-11-04,овсянников тайный советник,Ростовская область,11029,control,DEVICE_ALL,nested,2,овсянников тайный советник,2,2
+2026-11-04,овсянников тайный советник,Тульская область,10832,control,DEVICE_ALL,nested,1,овсянников тайный советник,1,1
