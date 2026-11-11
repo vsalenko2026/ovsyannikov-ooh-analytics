@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-11-11T14:01:51+00:00",
+    "region_name": "Ростовская область",
+    "region_type": "control"
+  },
+  "request": {
+    "phrase": "ovsyannikovsoap",
+    "regions": [
+      "11029"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {}
+}

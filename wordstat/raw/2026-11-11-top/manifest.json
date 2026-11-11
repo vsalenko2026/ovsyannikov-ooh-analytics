@@ -10,11 +10,11 @@
     "ovsyannikov"
   ],
   "planned": 96,
-  "fetched": 26,
-  "from_cache": 0,
+  "fetched": 70,
+  "from_cache": 26,
   "errors": [],
-  "stopped_early": "квота исчерпана на 27-м вызове из 96",
-  "http_calls": 27,
-  "billable_calls": 26,
-  "cost_rub": 0.52
+  "stopped_early": "",
+  "http_calls": 70,
+  "billable_calls": 70,
+  "cost_rub": 1.4
 }
