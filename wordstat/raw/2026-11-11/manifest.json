@@ -1,10 +1,10 @@
 {
   "run_date": "2026-11-11",
   "planned": 96,
-  "fetched": 5,
-  "from_cache": 0,
+  "fetched": 91,
+  "from_cache": 5,
   "errors": [],
-  "stopped_early": "квота исчерпана на 6-м вызове из 96",
+  "stopped_early": "",
   "period": "PERIOD_WEEKLY",
   "from_date": "2026-03-30",
   "to_date": "2026-11-08",
@@ -22,8 +22,8 @@
     "DEVICE_ALL"
   ],
   "regions": 24,
-  "http_calls": 6,
-  "billable_calls": 5,
+  "http_calls": 91,
+  "billable_calls": 91,
   "retries": 0,
-  "cost_rub": 0.1
+  "cost_rub": 1.82
 }
