@@ -9,11 +9,11 @@
     "овсянников купить"
   ],
   "planned": 72,
-  "fetched": 72,
-  "from_cache": 0,
+  "fetched": 0,
+  "from_cache": 72,
   "errors": [],
   "stopped_early": "",
-  "http_calls": 72,
-  "billable_calls": 72,
-  "cost_rub": 1.44
+  "http_calls": 0,
+  "billable_calls": 0,
+  "cost_rub": 0.0
 }
