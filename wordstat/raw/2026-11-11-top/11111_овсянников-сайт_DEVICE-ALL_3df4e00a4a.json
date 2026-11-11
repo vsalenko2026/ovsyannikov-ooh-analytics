@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "fetched_at": "2026-11-11T13:01:43+00:00",
+    "region_name": "Республика Башкортостан",
+    "region_type": "campaign"
+  },
+  "request": {
+    "phrase": "овсянников сайт",
+    "regions": [
+      "11111"
+    ],
+    "devices": [
+      "DEVICE_ALL"
+    ],
+    "numPhrases": 50
+  },
+  "response": {}
+}
