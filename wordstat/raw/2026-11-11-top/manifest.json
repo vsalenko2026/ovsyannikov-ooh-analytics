@@ -1,0 +1,20 @@
+{
+  "run_date": "2026-11-11",
+  "method": "GetTop",
+  "limit": 50,
+  "tag": "",
+  "phrases": [
+    "овсянников мыло",
+    "овсянников косметика",
+    "овсянников купить",
+    "овсянников крем"
+  ],
+  "planned": 96,
+  "fetched": 22,
+  "from_cache": 0,
+  "errors": [],
+  "stopped_early": "квота исчерпана на 23-м вызове из 96",
+  "http_calls": 23,
+  "billable_calls": 22,
+  "cost_rub": 0.44
+}
