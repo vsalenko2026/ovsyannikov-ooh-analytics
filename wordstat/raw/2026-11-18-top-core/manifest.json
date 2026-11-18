@@ -10,10 +10,10 @@
   ],
   "planned": 72,
   "fetched": 36,
-  "from_cache": 0,
+  "from_cache": 36,
   "errors": [],
-  "stopped_early": "квота исчерпана на 37-м вызове из 72",
-  "http_calls": 37,
+  "stopped_early": "",
+  "http_calls": 36,
   "billable_calls": 36,
   "cost_rub": 0.72
 }

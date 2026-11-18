@@ -10,11 +10,11 @@
     "ovsyannikov"
   ],
   "planned": 96,
-  "fetched": 65,
-  "from_cache": 31,
+  "fetched": 0,
+  "from_cache": 96,
   "errors": [],
   "stopped_early": "",
-  "http_calls": 65,
-  "billable_calls": 65,
-  "cost_rub": 1.3
+  "http_calls": 0,
+  "billable_calls": 0,
+  "cost_rub": 0.0
 }
